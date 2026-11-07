@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-07T03:18:05.582504+00:00",
+  "selected_method": {
+    "path": "/srv/home/bohanlyu/MLS-Bench/research/unlearning_matching/selected_method_20261106.json",
+    "sha256": "932933eacaf2a268210934071f66025ab64b0495d122dfb968f8caa7760d21e7"
+  },
+  "completed58_snapshot": {
+    "path": "/srv/home/bohanlyu/MLS-Bench/.local-saves/unlearning-project-20261106/optimization/daytona_recovery/calibration_table_completed58.json",
+    "sha256": "b0e26861e37b2f6f71730d6dee233c1a4c120c134ba53c3b02b36e72ece64451"
+  },
+  "scientific_row_identity_sha256": "d12d8054faddb1442286e4b6ff620af08f543ff6fa5f10bda061b22890b18058",
+  "row_count": 58,
+  "identical_to_frozen_ranked_rows": true,
+  "original_table_pin": {
+    "path": "/srv/home/bohanlyu/MLS-Bench/.local-saves/unlearning-project-20261106/optimization/daytona_recovery/calibration_table.json",
+    "sha256": "6093e3ca81b05a758c1993e08b1d35c8a130a09092ff436cda867106e3134506"
+  },
+  "explanation": "The collector continued refreshing the original table file updated_utc every 15s after the method was frozen. This changed its file hash. The method file embeds all 58 selected rows; the stopped-collector snapshot agrees exactly row-for-row after sorting by ID. No configuration, checkpoint, selected epoch or scientific value changed. This append-only evidence receipt leaves the selected method and running confirmation source pins unchanged."
+}

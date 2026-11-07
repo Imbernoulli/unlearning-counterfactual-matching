@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "created_utc": "2026-11-07T04:36:44.265809+00:00",
+  "purpose": "New development round requested after SalUn comparison; existing frozen energy confirmation remains unchanged",
+  "audit_test_or_retrain_predictions_used": false,
+  "discovery_seed": 42,
+  "discovery_split_seed": 42,
+  "maximum_scientific_candidates": 4,
+  "initialization": "unchanged inherited ten-epoch SalUn checkpoint on matching seed and deletion split",
+  "entrypoint": "research/unlearning_matching/salun_residual_study.py",
+  "fixed": {
+    "schedules": "C",
+    "bn_mode": "frozen",
+    "epochs": 5,
+    "statistic": "joint",
+    "anchor_weight": 0,
+    "momentum": 0.9,
+    "weight_decay": 0.0005
+  },
+  "grid": {
+    "learning_rate": [
+      0.0003,
+      0.001
+    ],
+    "forget_weight": [
+      0.1,
+      1.0
+    ]
+  },
+  "selection": {
+    "dataset": "same previously reused1250-image selection fold; adaptively reused development evidence",
+    "objective": "minimum max(abs(forget error-selection error), confidence KS)",
+    "include_epoch0": "unchanged SalUn competes and wins ties",
+    "utility_reference": "SalUn warmstart",
+    "maximum_retain_accuracy_degradation_pp": 0.25,
+    "maximum_selection_accuracy_degradation_pp": 0.5,
+    "ties": [
+      "earlier epoch",
+      "smaller learning rate",
+      "stable candidate id"
+    ]
+  },
+  "target": "Frozen SalUn warmstart2500-image held-out joint-score reference; Original retained for diagnostics only; no calibration gradients",
+  "bn": "SalUn warmstart buffers held exactly fixed; Original-relative and warmstart-relative drift both reported",
+  "confirmation": "freeze candidate and epoch before independent audit/test; new seeds take fixed final epoch, never their selected best",
+  "reporting": "separate from the earlier58-trial scientific search and its capped60 attempts; disclose SalUn training plus additional correction cost; no guaranteed improvement or SOTA claim",
+  "prelaunch_amendment": {
+    "supersedes_unexecuted_v1": true,
+    "v1_source_protocol_commit": "a7846041a10cb644cc654c64713895c226cc5fce",
+    "v1_jobs_commit": "535ef5cad942d353c3f9fa5ce03c706a426e386a",
+    "v1_sha256": {
+      "salun_residual_study.py": "1bf4c4f37eaee4a0c5dd6fd95cc2cc1d19ec2605636dba898a32746547f2bd31",
+      "salun_residual_protocol_20261107.json": "3f90b6f84c5a953032c52f9d697931c9c12d104f622fef25dced63a9ddadc0d0",
+      "salun_residual_jobs_20261107.json": "d3100cac19af377f0ef62c6a27ddfb706bf5191b5c92b2daf41881d1cbd235bc"
+    },
+    "reason": "Match forget scores to nonmember scores under the same SalUn warmstart; avoid assuming Original sharper held-out distribution is the residual target",
+    "v1_trials_launched": 0,
+    "new_results_audit_test_or_retrain_predictions_read": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+ "A2": {
+  "frozen_utc": "see git commit time of this file (2026-11-06 ~23:00 PST, before any A2/A3 training)",
+  "entrypoint": "research/unlearning_matching/devgap/unlearn_dev.py",
+  "budget": "10 retain passes, 10.0 forget passes (benchmark cap 10 / 11)",
+  "extra_resources_disclosed": "2500 never-trained validation images and Original outputs on them; clean forget forwards",
+  "selected_after": "confirmation of A was already evaluated on test; A2/A3 were chosen on dev split 42 only (grid8/grid10, 2 training seeds), not on A's test numbers",
+  "confirmation_runs": "s43..s49 fresh deletion splits, o142..o542 independent Originals; s42 dev reported separately",
+  "tag": "A2_dec2_map_sh-1",
+  "args": "--epochs 10 --forget-every 9 --lr .003 --alpha 1 --clip 5 --decay-epochs 2 --target-map research/unlearning_matching/devgap/datasize_map_seed42.npz --target-shift -1",
+  "dev": "mean over 2 training seeds: AvgGap 0.326, selection-only 0.645"
+ },
+ "A3": {
+  "frozen_utc": "see git commit time of this file (2026-11-06 ~23:00 PST, before any A2/A3 training)",
+  "entrypoint": "research/unlearning_matching/devgap/unlearn_dev.py",
+  "budget": "10 retain passes, 10.0 forget passes (benchmark cap 10 / 11)",
+  "extra_resources_disclosed": "2500 never-trained validation images and Original outputs on them; clean forget forwards",
+  "selected_after": "confirmation of A was already evaluated on test; A2/A3 were chosen on dev split 42 only (grid8/grid10, 2 training seeds), not on A's test numbers",
+  "confirmation_runs": "s43..s49 fresh deletion splits, o142..o542 independent Originals; s42 dev reported separately",
+  "tag": "A3_dec2_sh-2",
+  "args": "--epochs 10 --forget-every 9 --lr .003 --alpha 1 --clip 5 --decay-epochs 2 --target-shift -2",
+  "dev": "mean over 2 training seeds: AvgGap 0.391, selection-only 0.634"
+ },
+ "datasize_map": "Retrain-42 minus Original per-class held-out (target fold) log-odds quantile difference, averaged over classes, 21-point smoothed; calibration split 42 only"
+}

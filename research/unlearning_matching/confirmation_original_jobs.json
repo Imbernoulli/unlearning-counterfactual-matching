@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-07T03:04:27.408208+00:00",
+  "purpose": "Fixed independent Original training specified by confirmation_protocol_20261106.json; launch only after search method freeze, not a tuning experiment",
+  "jobs": [
+    {
+      "id": "original_seed342",
+      "gpu": 0,
+      "expected_script": "train_original.py",
+      "log_dir": "out/confirmation_jobs/original_seed342",
+      "argv": [
+        "python",
+        "-u",
+        "research/unlearning_matching/train_original.py",
+        "--data-dir",
+        "data",
+        "--out-dir",
+        "out/independent_originals/seed342",
+        "--seed",
+        "342",
+        "--gpu",
+        "{gpu}",
+        "--threads",
+        "2",
+        "--amp"
+      ],
+      "required_outputs": [
+        "out/independent_originals/seed342/original.pt",
+        "out/independent_originals/seed342/original.json"
+      ]
+    },
+    {
+      "id": "original_seed442",
+      "gpu": 1,
+      "expected_script": "train_original.py",
+      "log_dir": "out/confirmation_jobs/original_seed442",
+      "argv": [
+        "python",
+        "-u",
+        "research/unlearning_matching/train_original.py",
+        "--data-dir",
+        "data",
+        "--out-dir",
+        "out/independent_originals/seed442",
+        "--seed",
+        "442",
+        "--gpu",
+        "{gpu}",
+        "--threads",
+        "2",
+        "--amp"
+      ],
+      "required_outputs": [
+        "out/independent_originals/seed442/original.pt",
+        "out/independent_originals/seed442/original.json"
+      ]
+    },
+    {
+      "id": "original_seed542",
+      "gpu": 0,
+      "expected_script": "train_original.py",
+      "log_dir": "out/confirmation_jobs/original_seed542",
+      "argv": [
+        "python",
+        "-u",
+        "research/unlearning_matching/train_original.py",
+        "--data-dir",
+        "data",
+        "--out-dir",
+        "out/independent_originals/seed542",
+        "--seed",
+        "542",
+        "--gpu",
+        "{gpu}",
+        "--threads",
+        "2",
+        "--amp"
+      ],
+      "required_outputs": [
+        "out/independent_originals/seed542/original.pt",
+        "out/independent_originals/seed542/original.json"
+      ]
+    }
+  ],
+  "sources": {
+    "research/unlearning_matching/train_original.py": "303e65cc08dde2e9f8983c75b3c13b3647922c76f9a6020b0552f7888561551a"
+  }
+}

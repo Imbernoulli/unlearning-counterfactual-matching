@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-07T02:58:39.622649+00:00",
+  "purpose": "Frozen confirmation design before any new audit or paired test evaluation. Separate deletion-split variability from Original training variability.",
+  "selection": {
+    "discovery_seed": 42,
+    "discovery_split_seed": 42,
+    "maximum_search_attempts_including_failures": 60,
+    "rule": "min feasible selection J; ties earlier epoch, smaller lr, stable id",
+    "freeze": "complete algorithm and exact stopping epoch before all confirmation runs; use fixed last.pt for new seeds; no reselecting"
+  },
+  "canonical_original": {
+    "deletion_runs": [
+      {
+        "seed": 42,
+        "split_seed": 42,
+        "role": "discovery, not independent confirmation"
+      },
+      {
+        "seed": 43,
+        "split_seed": 43,
+        "role": "fixed confirmation"
+      },
+      {
+        "seed": 44,
+        "split_seed": 44,
+        "role": "fixed confirmation"
+      }
+    ]
+  },
+  "independent_originals": [
+    {
+      "original_seed": 142,
+      "unlearning_seed": 142,
+      "split_seed": 42,
+      "paired_retrain_seed": 142
+    },
+    {
+      "original_seed": 242,
+      "unlearning_seed": 242,
+      "split_seed": 42,
+      "paired_retrain_seed": 242
+    },
+    {
+      "original_seed": 342,
+      "unlearning_seed": 342,
+      "split_seed": 42,
+      "paired_retrain_seed": 342
+    },
+    {
+      "original_seed": 442,
+      "unlearning_seed": 442,
+      "split_seed": 42,
+      "paired_retrain_seed": 442
+    },
+    {
+      "original_seed": 542,
+      "unlearning_seed": 542,
+      "split_seed": 42,
+      "paired_retrain_seed": 542
+    }
+  ],
+  "independent_recipe": {
+    "original_epochs": 182,
+    "retrain_epochs": 182,
+    "source_sha256": "303e65cc08dde2e9f8983c75b3c13b3647922c76f9a6020b0552f7888561551a",
+    "fixed_final_epoch": true,
+    "no_validation_or_test_selection": true
+  },
+  "comparators": [
+    "frozen_selected_method",
+    "SalUn with unchanged inherited code and hyperparameters",
+    "Original unchanged"
+  ],
+  "audit": "One pass for each prespecified candidate/Original after method freeze; never switch configuration or stopping epoch from audit.",
+  "test": "Paired references and original benchmark evaluator only after matching immutable audit receipt; report all runs and failures.",
+  "reporting": "Report canonical split-confirmation and five independent-Original results separately; mean per-run absolute gaps before aggregation, sample SD; discovery seed is labelled.",
+  "resources": {
+    "maximum_simultaneous_gpus": 2,
+    "hard_cleanup_deadline_utc": "2026-11-07T05:10:00Z",
+    "account_total_costs": true
+  }
+}

@@ -1,0 +1,556 @@
+{
+  "n_runs": 3,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "note": "One shared Original; paired deletion/retraining runs. Sample SD across runs. Update-loop time excludes fixed target construction. Empirical comparisons do not establish certified unlearning.",
+  "methods": [
+    {
+      "method": "original",
+      "label": "Original",
+      "n": 3,
+      "ua_mean": 0.0,
+      "ua_sd": 0.0,
+      "ra_mean": 100.0,
+      "ra_sd": 0.0,
+      "ta_mean": 95.01000046730042,
+      "ta_sd": 0.0,
+      "mia_mean": 0.2296296296296315,
+      "mia_sd": 0.06415002990996203,
+      "avg_gap_mean": 4.667686180273691,
+      "avg_gap_sd": 0.06357271437862914,
+      "seconds_mean": 5.5707680682341255e-05,
+      "seconds_sd": 1.2317290801959425e-05
+    },
+    {
+      "method": "ga",
+      "label": "Gradient ascent",
+      "n": 3,
+      "ua_mean": 0.0,
+      "ua_sd": 0.0,
+      "ra_mean": 100.0,
+      "ra_sd": 0.0,
+      "ta_mean": 95.04999915758769,
+      "ta_sd": 0.08543921649466706,
+      "mia_mean": 0.21481481481481582,
+      "mia_sd": 0.012830005981992408,
+      "avg_gap_mean": 4.681389556549212,
+      "avg_gap_sd": 0.02728915145724233,
+      "seconds_mean": 1.2620877816031377,
+      "seconds_sd": 0.010055576177273822
+    },
+    {
+      "method": "ft",
+      "label": "Fine-tuning",
+      "n": 3,
+      "ua_mean": 7.311109701792399,
+      "ua_sd": 1.5801215873890102,
+      "ra_mean": 95.84115346272786,
+      "ra_sd": 1.2711612839195543,
+      "ta_mean": 89.56999778747559,
+      "ta_sd": 1.436348799751398,
+      "mia_mean": 12.94814814814815,
+      "mia_sd": 1.663898936468769,
+      "avg_gap_mean": 3.0505442901893898,
+      "avg_gap_sd": 1.2302041023712198,
+      "seconds_mean": 22.243596970724564,
+      "seconds_sd": 0.035639934924879955
+    },
+    {
+      "method": "l1_sparse",
+      "label": "L1-sparse FT",
+      "n": 3,
+      "ua_mean": 6.607407331466675,
+      "ua_sd": 1.1811957449170154,
+      "ra_mean": 96.34485840797424,
+      "ra_sd": 0.6015883250735278,
+      "ta_mean": 89.95332916577657,
+      "ta_sd": 0.8967347318022312,
+      "mia_mean": 12.377777777777775,
+      "mia_sd": 1.268614486772632,
+      "avg_gap_mean": 2.5473040611655615,
+      "avg_gap_sd": 0.41454217270439764,
+      "seconds_mean": 22.533666471795488,
+      "seconds_sd": 0.17526856348934403
+    },
+    {
+      "method": "rl",
+      "label": "Random labelling",
+      "n": 3,
+      "ua_mean": 2.0962953567504883,
+      "ua_sd": 0.20163975599088416,
+      "ra_mean": 99.81234868367513,
+      "ra_sd": 0.10020709947021982,
+      "ta_mean": 94.08999681472778,
+      "ta_sd": 0.25534232704830523,
+      "mia_mean": 13.562962962962965,
+      "mia_sd": 0.700029393856698,
+      "avg_gap_mean": 1.0527467383278746,
+      "avg_gap_sd": 0.1817075469192381,
+      "seconds_mean": 24.461255502266187,
+      "seconds_sd": 0.1695837325031584
+    },
+    {
+      "method": "salun",
+      "label": "SalUn",
+      "n": 3,
+      "ua_mean": 2.7259250481923423,
+      "ua_sd": 0.6857777732347001,
+      "ra_mean": 99.49218432108562,
+      "ra_sd": 0.2217050944501568,
+      "ta_mean": 93.71666510899861,
+      "ta_sd": 0.27970470201931186,
+      "mia_mean": 12.681481481481484,
+      "mia_sd": 0.45014858086632764,
+      "avg_gap_mean": 0.9696388690559951,
+      "avg_gap_sd": 0.10874441799966218,
+      "seconds_mean": 26.41706375249972,
+      "seconds_sd": 0.23042948798869176
+    },
+    {
+      "method": "regun_mean_control",
+      "label": "Mean-target control",
+      "n": 3,
+      "ua_mean": 0.09629527727762859,
+      "ua_sd": 0.03394254483937297,
+      "ra_mean": 99.98436570167542,
+      "ra_sd": 0.007544594326147872,
+      "ta_mean": 94.68999703725179,
+      "ta_sd": 0.04358938544864286,
+      "mia_mean": 1.629629629629629,
+      "mia_sd": 0.06789001029564105,
+      "avg_gap_mean": 4.217520078023274,
+      "avg_gap_sd": 0.06810965460969098,
+      "seconds_mean": 28.268729832333822,
+      "seconds_sd": 0.1348424002119225
+    },
+    {
+      "method": "w2_logodds",
+      "label": "Log-odds transport",
+      "n": 3,
+      "ua_mean": 3.288888931274414,
+      "ua_sd": 0.19751687493600212,
+      "ra_mean": 99.99588529268901,
+      "ra_sd": 0.00514012684504537,
+      "ta_mean": 94.90999778111775,
+      "ta_sd": 0.21656409743475658,
+      "mia_mean": 6.799999999999998,
+      "mia_sd": 0.3087209775433301,
+      "avg_gap_mean": 2.17889936014458,
+      "avg_gap_sd": 0.15400796076853995,
+      "seconds_mean": 29.09328474989161,
+      "seconds_sd": 0.15526132002268478
+    },
+    {
+      "method": "w2_logodds_margin",
+      "label": "Log-odds + margin",
+      "n": 3,
+      "ua_mean": 3.325925270716349,
+      "ua_sd": 0.11185037133507401,
+      "ra_mean": 99.9958872795105,
+      "ra_sd": 0.0028493763380587705,
+      "ta_mean": 94.95999813079834,
+      "ta_sd": 0.06082743011395243,
+      "mia_mean": 7.066666666666669,
+      "mia_sd": 0.32049344670791113,
+      "avg_gap_mean": 2.1154731993322007,
+      "avg_gap_sd": 0.09424790614115783,
+      "seconds_mean": 29.92050912898655,
+      "seconds_sd": 0.21494500973332853
+    },
+    {
+      "method": "global_quantile_iprojection",
+      "label": "Global quantile + I-projection",
+      "n": 3,
+      "ua_mean": 0.3777762254079183,
+      "ua_sd": 0.1175894357824117,
+      "ra_mean": 100.0,
+      "ra_sd": 0.0,
+      "ta_mean": 94.97666358947754,
+      "ta_sd": 0.015274535423246813,
+      "mia_mean": 3.288888888888889,
+      "mia_sd": 0.10183501544346281,
+      "avg_gap_mean": 3.8000930896511775,
+      "avg_gap_sd": 0.03440653999305525,
+      "seconds_mean": 28.287680349467944,
+      "seconds_sd": 0.05951169653905993
+    },
+    {
+      "method": "global_quantile_logodds_mse",
+      "label": "Global quantile + log-odds MSE",
+      "n": 3,
+      "ua_mean": 3.8740734259287515,
+      "ua_sd": 0.07143483524065619,
+      "ra_mean": 99.9967098236084,
+      "ra_sd": 0.0014246881690293852,
+      "ta_mean": 94.8799987634023,
+      "ta_sd": 0.02645852419494269,
+      "mia_mean": 8.111111111111109,
+      "mia_sd": 0.10183501544346314,
+      "avg_gap_mean": 1.697119571544506,
+      "avg_gap_sd": 0.04998026632119669,
+      "seconds_mean": 28.037219783446442,
+      "seconds_sd": 0.06533127722117633
+    },
+    {
+      "method": "retrain",
+      "label": "Paired Retrain",
+      "n": 3,
+      "ua_mean": 5.207407474517822,
+      "ua_sd": 0.211208192823004,
+      "ra_mean": 100.0,
+      "ra_sd": 0.0,
+      "ta_mean": 94.27999655405681,
+      "ta_sd": 0.02000033862839594,
+      "mia_mean": 12.962962962962962,
+      "mia_sd": 0.04625924443258355,
+      "avg_gap_mean": 0.0,
+      "avg_gap_sd": 0.0,
+      "seconds_mean": 171.7389063461063,
+      "seconds_sd": 7.549623137590014
+    }
+  ],
+  "paired_comparisons": {
+    "regun_mean_control": {
+      "rl": {
+        "baseline_gap_minus_candidate_gap": [
+          -3.3106787827279858,
+          -3.0072517977820454,
+          -3.1763894385761695
+        ],
+        "mean": -3.1647733396954005,
+        "sd": 0.15204665110830895
+      },
+      "salun": {
+        "baseline_gap_minus_candidate_gap": [
+          -3.253827067216239,
+          -3.106667228539784,
+          -3.383149331145816
+        ],
+        "mean": -3.24788120896728,
+        "sd": 0.13833691910730364
+      }
+    },
+    "w2_logodds": {
+      "rl": {
+        "baseline_gap_minus_candidate_gap": [
+          -1.2582404600249397,
+          -1.161204503642185,
+          -0.9590129017829914
+        ],
+        "mean": -1.1261526218167053,
+        "sd": 0.1526622373656635
+      },
+      "salun": {
+        "baseline_gap_minus_candidate_gap": [
+          -1.201388744513193,
+          -1.2606199343999234,
+          -1.165772794352638
+        ],
+        "mean": -1.2092604910885847,
+        "sd": 0.04791104558865042
+      }
+    },
+    "w2_logodds_margin": {
+      "rl": {
+        "baseline_gap_minus_candidate_gap": [
+          -1.1728082378705347,
+          -0.9218521475791879,
+          -1.0935189975632564
+        ],
+        "mean": -1.0627264610043263,
+        "sd": 0.12828045464675994
+      },
+      "salun": {
+        "baseline_gap_minus_candidate_gap": [
+          -1.115956522358788,
+          -1.0212675783369263,
+          -1.300278890132903
+        ],
+        "mean": -1.1458343302762057,
+        "sd": 0.14188495544627175
+      }
+    },
+    "global_quantile_iprojection": {
+      "rl": {
+        "baseline_gap_minus_candidate_gap": [
+          -2.9129019154442686,
+          -2.6304019596841557,
+          -2.6987351788414857
+        ],
+        "mean": -2.7473463513233036,
+        "sd": 0.14739009742401016
+      },
+      "salun": {
+        "baseline_gap_minus_candidate_gap": [
+          -2.856050199932522,
+          -2.729817390441894,
+          -2.9054950714111323
+        ],
+        "mean": -2.8304542205951826,
+        "sd": 0.0905926460390714
+      }
+    },
+    "global_quantile_logodds_mse": {
+      "rl": {
+        "baseline_gap_minus_candidate_gap": [
+          -0.7940746492809736,
+          -0.5152463396390248,
+          -0.6237975107298959
+        ],
+        "mean": -0.6443728332166314,
+        "sd": 0.14054826390255235
+      },
+      "salun": {
+        "baseline_gap_minus_candidate_gap": [
+          -0.7372229337692269,
+          -0.6146617703967632,
+          -0.8305574032995424
+        ],
+        "mean": -0.7274807024885108,
+        "sd": 0.10827702609218691
+      }
+    }
+  },
+  "evidence": [
+    {
+      "path": "/srv/home/bohanlyu/MLS-Bench/.local-saves/unlearning-project-20261106/daytona/out/runs/seed42_split42/results.json",
+      "sha256": "c77ed3fb56162ce804821d09aad463fd532dcda35e15594d30ff5500d375789f",
+      "config": {
+        "schema": 1,
+        "code_sha256": "b15c5d8fbc72977acc4306c12687b4f536d268a9c87db2519b623be47ec975f6",
+        "common_sha256": "2cdfe76cb63217c72cca07eccba2863e3c4fd858627e9809ac53fa4724b22d87",
+        "train_sha256": "af4f586337eda0c26f82c4fd1864403d1ee0385e2ea10df41f8d40c8a70c8b89",
+        "original_sha256": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58",
+        "seed": 42,
+        "split_seed": 42,
+        "reference_epochs": 182,
+        "reference_amp": true,
+        "candidate_epochs": 10,
+        "candidate_lr": 0.003,
+        "forget_weight": 0.1,
+        "anchor_weight": 0.1,
+        "torch_version": "2.5.1+cu121",
+        "numpy_version": "1.26.4",
+        "sklearn_version": "1.5.2",
+        "baseline_sha256": {
+          "original": "e00e7c480fd7f4f5b7854bf450d696180b91a8349582b3c483b7d135ad118919",
+          "ft": "760c3f24010ecd3c1d27e923b5016102ba5e4903ae9c1afc93ab7049dbd38261",
+          "ga": "a83c6be6ef995ff3f6893a1bba7d3afe4ede62f01cd0f7095d71200d671048bb",
+          "rl": "4646b4cf66f2a4093ecb8d805dfdb08d768ea63a1003441c64fd22bbcd63c35c",
+          "l1_sparse": "ce899cf511b02bb00c2bacd9ff79a1ac9e1e6b9ed82396597c5d20dd30fd72fc",
+          "salun": "9780bf2cc37681f7a244f4b543be85bd604e6238fcd1e0bf11af3d77872f02f4"
+        },
+        "planned_methods": [
+          "original",
+          "ft",
+          "ga",
+          "rl",
+          "l1_sparse",
+          "salun",
+          "regun_mean_control",
+          "w2_logodds",
+          "w2_logodds_margin"
+        ]
+      },
+      "followup": {
+        "path": "/srv/home/bohanlyu/MLS-Bench/.local-saves/unlearning-project-20261106/daytona/out/fixed_quantile/seed42_split42/results.json",
+        "sha256": "ed79bfcea0915130129a70127af0bea010e3516eebc5953590f28528d5fda35b",
+        "preregistration": {
+          "created_utc": "2026-11-07T02:07:37.629667+00:00",
+          "configuration": {
+            "schema": 1,
+            "code_sha256": "760a2147acee205d2c34c0fbc4113be60161cea7bde74dd977bab4d81f625c79",
+            "frozen_runner_sha256": "b15c5d8fbc72977acc4306c12687b4f536d268a9c87db2519b623be47ec975f6",
+            "common_sha256": "2cdfe76cb63217c72cca07eccba2863e3c4fd858627e9809ac53fa4724b22d87",
+            "train_sha256": "af4f586337eda0c26f82c4fd1864403d1ee0385e2ea10df41f8d40c8a70c8b89",
+            "original_sha256": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58",
+            "seed": 42,
+            "split_seed": 42,
+            "planned_variants": {
+              "kl": "global_quantile_iprojection",
+              "logodds_mse": "global_quantile_logodds_mse"
+            },
+            "epochs": 10,
+            "lr": 0.003,
+            "momentum": 0.9,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "forget_weight": 0.1,
+            "retain_anchor_weight": 0.1,
+            "anchor_temperature": 2.0,
+            "forget_gradient_clip_norm": 5.0,
+            "network": "all parameters; FP32",
+            "target": "fixed, class-conditional global OT barycentric logodds; Original on 2500 held-out images",
+            "target_rank": "Original clean true-class logodds of ALL 4500 forget points, separately by class",
+            "training_order": "per epoch: clean eval-mode forget pass, augmented train-mode retain pass",
+            "selection": "both variants specified before new test inspection; no test or Retrain-target tuning",
+            "torch_version": "2.5.1+cu121",
+            "numpy_version": "1.26.4",
+            "sklearn_version": "1.5.2"
+          }
+        }
+      }
+    },
+    {
+      "path": "/srv/home/bohanlyu/MLS-Bench/.local-saves/unlearning-project-20261106/daytona/out/runs/seed43_split43/results.json",
+      "sha256": "efd28947627cfc7d9ff383f7f76dd91830d325579b1bd601275b95b2d2f93ab1",
+      "config": {
+        "schema": 1,
+        "code_sha256": "b15c5d8fbc72977acc4306c12687b4f536d268a9c87db2519b623be47ec975f6",
+        "common_sha256": "2cdfe76cb63217c72cca07eccba2863e3c4fd858627e9809ac53fa4724b22d87",
+        "train_sha256": "af4f586337eda0c26f82c4fd1864403d1ee0385e2ea10df41f8d40c8a70c8b89",
+        "original_sha256": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58",
+        "seed": 43,
+        "split_seed": 43,
+        "reference_epochs": 182,
+        "reference_amp": true,
+        "candidate_epochs": 10,
+        "candidate_lr": 0.003,
+        "forget_weight": 0.1,
+        "anchor_weight": 0.1,
+        "torch_version": "2.5.1+cu121",
+        "numpy_version": "1.26.4",
+        "sklearn_version": "1.5.2",
+        "baseline_sha256": {
+          "original": "e00e7c480fd7f4f5b7854bf450d696180b91a8349582b3c483b7d135ad118919",
+          "ft": "760c3f24010ecd3c1d27e923b5016102ba5e4903ae9c1afc93ab7049dbd38261",
+          "ga": "a83c6be6ef995ff3f6893a1bba7d3afe4ede62f01cd0f7095d71200d671048bb",
+          "rl": "4646b4cf66f2a4093ecb8d805dfdb08d768ea63a1003441c64fd22bbcd63c35c",
+          "l1_sparse": "ce899cf511b02bb00c2bacd9ff79a1ac9e1e6b9ed82396597c5d20dd30fd72fc",
+          "salun": "9780bf2cc37681f7a244f4b543be85bd604e6238fcd1e0bf11af3d77872f02f4"
+        },
+        "planned_methods": [
+          "original",
+          "ft",
+          "ga",
+          "rl",
+          "l1_sparse",
+          "salun",
+          "regun_mean_control",
+          "w2_logodds",
+          "w2_logodds_margin"
+        ]
+      },
+      "followup": {
+        "path": "/srv/home/bohanlyu/MLS-Bench/.local-saves/unlearning-project-20261106/daytona/out/fixed_quantile/seed43_split43/results.json",
+        "sha256": "a86207f2b2a830fa828f40418782cd2a8d15c88734a280d7f786428fbc92d392",
+        "preregistration": {
+          "created_utc": "2026-11-07T02:07:40.197379+00:00",
+          "configuration": {
+            "schema": 1,
+            "code_sha256": "760a2147acee205d2c34c0fbc4113be60161cea7bde74dd977bab4d81f625c79",
+            "frozen_runner_sha256": "b15c5d8fbc72977acc4306c12687b4f536d268a9c87db2519b623be47ec975f6",
+            "common_sha256": "2cdfe76cb63217c72cca07eccba2863e3c4fd858627e9809ac53fa4724b22d87",
+            "train_sha256": "af4f586337eda0c26f82c4fd1864403d1ee0385e2ea10df41f8d40c8a70c8b89",
+            "original_sha256": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58",
+            "seed": 43,
+            "split_seed": 43,
+            "planned_variants": {
+              "kl": "global_quantile_iprojection",
+              "logodds_mse": "global_quantile_logodds_mse"
+            },
+            "epochs": 10,
+            "lr": 0.003,
+            "momentum": 0.9,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "forget_weight": 0.1,
+            "retain_anchor_weight": 0.1,
+            "anchor_temperature": 2.0,
+            "forget_gradient_clip_norm": 5.0,
+            "network": "all parameters; FP32",
+            "target": "fixed, class-conditional global OT barycentric logodds; Original on 2500 held-out images",
+            "target_rank": "Original clean true-class logodds of ALL 4500 forget points, separately by class",
+            "training_order": "per epoch: clean eval-mode forget pass, augmented train-mode retain pass",
+            "selection": "both variants specified before new test inspection; no test or Retrain-target tuning",
+            "torch_version": "2.5.1+cu121",
+            "numpy_version": "1.26.4",
+            "sklearn_version": "1.5.2"
+          }
+        }
+      }
+    },
+    {
+      "path": "/srv/home/bohanlyu/MLS-Bench/.local-saves/unlearning-project-20261106/daytona/out/runs/seed44_split44/results.json",
+      "sha256": "6bbcbe8a74f9798ea389124cfbca55b02a062b1c075e0d193ddc4a28b1d51fce",
+      "config": {
+        "schema": 1,
+        "code_sha256": "b15c5d8fbc72977acc4306c12687b4f536d268a9c87db2519b623be47ec975f6",
+        "common_sha256": "2cdfe76cb63217c72cca07eccba2863e3c4fd858627e9809ac53fa4724b22d87",
+        "train_sha256": "af4f586337eda0c26f82c4fd1864403d1ee0385e2ea10df41f8d40c8a70c8b89",
+        "original_sha256": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58",
+        "seed": 44,
+        "split_seed": 44,
+        "reference_epochs": 182,
+        "reference_amp": true,
+        "candidate_epochs": 10,
+        "candidate_lr": 0.003,
+        "forget_weight": 0.1,
+        "anchor_weight": 0.1,
+        "torch_version": "2.5.1+cu121",
+        "numpy_version": "1.26.4",
+        "sklearn_version": "1.5.2",
+        "baseline_sha256": {
+          "original": "e00e7c480fd7f4f5b7854bf450d696180b91a8349582b3c483b7d135ad118919",
+          "ft": "760c3f24010ecd3c1d27e923b5016102ba5e4903ae9c1afc93ab7049dbd38261",
+          "ga": "a83c6be6ef995ff3f6893a1bba7d3afe4ede62f01cd0f7095d71200d671048bb",
+          "rl": "4646b4cf66f2a4093ecb8d805dfdb08d768ea63a1003441c64fd22bbcd63c35c",
+          "l1_sparse": "ce899cf511b02bb00c2bacd9ff79a1ac9e1e6b9ed82396597c5d20dd30fd72fc",
+          "salun": "9780bf2cc37681f7a244f4b543be85bd604e6238fcd1e0bf11af3d77872f02f4"
+        },
+        "planned_methods": [
+          "original",
+          "ft",
+          "ga",
+          "rl",
+          "l1_sparse",
+          "salun",
+          "regun_mean_control",
+          "w2_logodds",
+          "w2_logodds_margin"
+        ]
+      },
+      "followup": {
+        "path": "/srv/home/bohanlyu/MLS-Bench/.local-saves/unlearning-project-20261106/daytona/out/fixed_quantile/seed44_split44/results.json",
+        "sha256": "8b2b7deb43463bb6771919ba00e2126222fd4c0dbe290b1fb0ff465487c8bbb2",
+        "preregistration": {
+          "created_utc": "2026-11-07T02:09:12.325535+00:00",
+          "configuration": {
+            "schema": 1,
+            "code_sha256": "760a2147acee205d2c34c0fbc4113be60161cea7bde74dd977bab4d81f625c79",
+            "frozen_runner_sha256": "b15c5d8fbc72977acc4306c12687b4f536d268a9c87db2519b623be47ec975f6",
+            "common_sha256": "2cdfe76cb63217c72cca07eccba2863e3c4fd858627e9809ac53fa4724b22d87",
+            "train_sha256": "af4f586337eda0c26f82c4fd1864403d1ee0385e2ea10df41f8d40c8a70c8b89",
+            "original_sha256": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58",
+            "seed": 44,
+            "split_seed": 44,
+            "planned_variants": {
+              "kl": "global_quantile_iprojection",
+              "logodds_mse": "global_quantile_logodds_mse"
+            },
+            "epochs": 10,
+            "lr": 0.003,
+            "momentum": 0.9,
+            "weight_decay": 0.0005,
+            "batch_size": 256,
+            "forget_weight": 0.1,
+            "retain_anchor_weight": 0.1,
+            "anchor_temperature": 2.0,
+            "forget_gradient_clip_norm": 5.0,
+            "network": "all parameters; FP32",
+            "target": "fixed, class-conditional global OT barycentric logodds; Original on 2500 held-out images",
+            "target_rank": "Original clean true-class logodds of ALL 4500 forget points, separately by class",
+            "training_order": "per epoch: clean eval-mode forget pass, augmented train-mode retain pass",
+            "selection": "both variants specified before new test inspection; no test or Retrain-target tuning",
+            "torch_version": "2.5.1+cu121",
+            "numpy_version": "1.26.4",
+            "sklearn_version": "1.5.2"
+          }
+        }
+      }
+    }
+  ]
+}

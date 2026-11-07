@@ -1,0 +1,60 @@
+{
+  "seed": 42,
+  "split_seed": 42,
+  "code_sha256": "760a2147acee205d2c34c0fbc4113be60161cea7bde74dd977bab4d81f625c79",
+  "reference": "same split, independently initialized 182-epoch Retrain; recomputed raw metrics",
+  "methods": {
+    "retrain": {
+      "ua": 5.0000011920928955,
+      "ra": 100.0,
+      "ta": 94.2799985408783,
+      "mia": 13.0,
+      "n_forget": 4500,
+      "n_retain": 40500,
+      "n_test": 10000,
+      "seconds": 178.72341549908742,
+      "gaps": {
+        "ua": 0.0,
+        "ra": 0.0,
+        "ta": 0.0,
+        "mia": 0.0
+      },
+      "avg_gap": 0.0
+    },
+    "global_quantile_iprojection": {
+      "ua": 0.28888583183288574,
+      "ra": 100.0,
+      "ta": 94.9899971485138,
+      "mia": 3.3777777777777795,
+      "n_forget": 4500,
+      "n_retain": 40500,
+      "n_test": 10000,
+      "seconds": 28.317715904209763,
+      "gaps": {
+        "ua": 4.71111536026001,
+        "ra": 0.0,
+        "ta": 0.709998607635498,
+        "mia": 9.62222222222222
+      },
+      "avg_gap": 3.760834047529432
+    },
+    "global_quantile_logodds_mse": {
+      "ua": 3.8222193717956543,
+      "ra": 99.9975323677063,
+      "ta": 94.88999843597412,
+      "mia": 8.22222222222222,
+      "n_forget": 4500,
+      "n_retain": 40500,
+      "n_test": 10000,
+      "seconds": 28.096251687034965,
+      "gaps": {
+        "ua": 1.1777818202972412,
+        "ra": 0.002467632293701172,
+        "ta": 0.6099998950958252,
+        "mia": 4.77777777777778
+      },
+      "avg_gap": 1.642006781366137
+    }
+  },
+  "warning": "empirical matching only; no certified unlearning guarantee"
+}

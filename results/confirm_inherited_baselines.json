@@ -1,0 +1,829 @@
+{
+ "runs": {
+  "s43": {
+   "retrain": {
+    "ua": 5.199998617172241,
+    "ra": 100.0,
+    "ta": 94.25999522209167,
+    "mia": 12.911111111111106,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/eval-only/canonical/seed43_split43/retrain.pt",
+    "key": "51d23032873bd25f1235650b345eea8b80dd38f907c372ecc9484101f24ba989:71d57ca49330bb0d"
+   },
+   "ft": {
+    "ua": 6.0666680335998535,
+    "ra": 96.47407531738281,
+    "ta": 90.02999663352966,
+    "mia": 11.644444444444446,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed43_split43/ft.pt",
+    "key": "034653787ff07ade1b60016f6f692dacd1cac5e7f0cc90bb195f8a3f18757189:71d57ca49330bb0d",
+    "gap": {
+     "ua": 0.8666694164276123,
+     "ra": 3.5259246826171875,
+     "ta": 4.229998588562012,
+     "mia": 1.2666666666666604,
+     "avg": 2.472314838568368
+    }
+   },
+   "ga": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 95.03999948501587,
+    "mia": 0.20000000000000018,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed43_split43/ga.pt",
+    "key": "73378f572067d4f7e934718b5333661acfeb8e8269eabfabafa6b7125e5a2627:71d57ca49330bb0d",
+    "gap": {
+     "ua": 5.199998617172241,
+     "ra": 0.0,
+     "ta": 0.7800042629241943,
+     "mia": 12.711111111111105,
+     "avg": 4.672778497801885
+    }
+   },
+   "rl": {
+    "ua": 1.9111096858978271,
+    "ra": 99.91605281829834,
+    "ta": 94.30999755859375,
+    "mia": 14.266666666666673,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed43_split43/rl.pt",
+    "key": "81df045729ade8256c2fe4732bcbde7bfbfe91958140103f031c15d0794798d3:71d57ca49330bb0d",
+    "gap": {
+     "ua": 3.288888931274414,
+     "ra": 0.08394718170166016,
+     "ta": 0.050002336502075195,
+     "mia": 1.3555555555555667,
+     "avg": 1.194598501258429
+    }
+   },
+   "l1_sparse": {
+    "ua": 5.24444580078125,
+    "ra": 97.00247049331665,
+    "ta": 90.95999598503113,
+    "mia": 10.933333333333328,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed43_split43/l1_sparse.pt",
+    "key": "38925c736df2bbda4cc3e56e39c84f9d4d35134e1b899b1b7cd0caa9b87e060c:71d57ca49330bb0d",
+    "gap": {
+     "ua": 0.04444718360900879,
+     "ra": 2.9975295066833496,
+     "ta": 3.299999237060547,
+     "mia": 1.9777777777777779,
+     "avg": 2.079938426282671
+    }
+   }
+  },
+  "s47": {
+   "retrain": {
+    "ua": 5.24444580078125,
+    "ra": 100.0,
+    "ta": 94.40999627113342,
+    "mia": 12.844444444444447,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed47_split47/retrain.pt",
+    "key": "93c706f3773f7d7dbb161c26add64b1dd09ccf27e110a6a8d185336118cc4f4d:380efe496acb1acc"
+   },
+   "ft": {
+    "ua": 4.555553197860718,
+    "ra": 97.98765778541565,
+    "ta": 91.68999791145325,
+    "mia": 9.399999999999997,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed47_split47/ft.pt",
+    "key": "632ed2d13529d5fb319c5eea34f072c5555674f0df99c1e42925807591bc8c8f:380efe496acb1acc",
+    "gap": {
+     "ua": 0.6888926029205322,
+     "ra": 2.0123422145843506,
+     "ta": 2.719998359680176,
+     "mia": 3.44444444444445,
+     "avg": 2.216419405407377
+    }
+   },
+   "ga": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 95.06999850273132,
+    "mia": 0.4666666666666708,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed47_split47/ga.pt",
+    "key": "28ff26b69c33eb0387cc1271e761407d4d06d3b21bfea2a06185014213a6575c:380efe496acb1acc",
+    "gap": {
+     "ua": 5.24444580078125,
+     "ra": 0.0,
+     "ta": 0.6600022315979004,
+     "mia": 12.377777777777776,
+     "avg": 4.570556452539232
+    }
+   },
+   "rl": {
+    "ua": 1.9333302974700928,
+    "ra": 99.74321126937866,
+    "ta": 93.78999471664429,
+    "mia": 12.311111111111106,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed47_split47/rl.pt",
+    "key": "f54133947ae41a54b131f74c5700f93cd84adc16139363a337dd90315b106c1c:380efe496acb1acc",
+    "gap": {
+     "ua": 3.3111155033111572,
+     "ra": 0.2567887306213379,
+     "ta": 0.6200015544891357,
+     "mia": 0.5333333333333403,
+     "avg": 1.1803097804387428
+    }
+   },
+   "l1_sparse": {
+    "ua": 5.266666412353516,
+    "ra": 97.08642363548279,
+    "ta": 91.22999906539917,
+    "mia": 11.022222222222222,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed47_split47/l1_sparse.pt",
+    "key": "395cb0a1d12c7864d17ec8ac634811fad22692349f0178c831a7fa3e425d47f4:380efe496acb1acc",
+    "gap": {
+     "ua": 0.022220611572265625,
+     "ra": 2.913576364517212,
+     "ta": 3.179997205734253,
+     "mia": 1.8222222222222246,
+     "avg": 1.9845041010114888
+    }
+   }
+  },
+  "o342": {
+   "retrain": {
+    "ua": 5.466663837432861,
+    "ra": 100.0,
+    "ta": 94.5099949836731,
+    "mia": 12.86666666666667,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed342/baselines/seed342_split42/retrain.pt",
+    "key": "82fa01af3dff9c7d44e63d21c8441cd9688c7e5073d55e28cafeb30da55e518f:08441047618c2ee1"
+   },
+   "ft": {
+    "ua": 5.933332443237305,
+    "ra": 96.47654294967651,
+    "ta": 90.00999927520752,
+    "mia": 11.911111111111106,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o342/seed342_split42/ft.pt",
+    "key": "242538544347fa5711da8beccc535f4fe89b7e96a30e2da1bcce9318d92f7f04:08441047618c2ee1",
+    "gap": {
+     "ua": 0.46666860580444336,
+     "ra": 3.5234570503234863,
+     "ta": 4.499995708465576,
+     "mia": 0.9555555555555646,
+     "avg": 2.3614192300372676
+    }
+   },
+   "ga": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 94.60999965667725,
+    "mia": 0.5777777777777771,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o342/seed342_split42/ga.pt",
+    "key": "9346f611dae12b12419830d8ff137303cebed2a9ef58a20e50eb6346f22d7967:08441047618c2ee1",
+    "gap": {
+     "ua": 5.466663837432861,
+     "ra": 0.0,
+     "ta": 0.10000467300415039,
+     "mia": 12.288888888888893,
+     "avg": 4.463889349831476
+    }
+   },
+   "rl": {
+    "ua": 2.3555517196655273,
+    "ra": 99.86172914505005,
+    "ta": 93.9799964427948,
+    "mia": 14.244444444444449,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o342/seed342_split42/rl.pt",
+    "key": "7a27c9d3388f1a8a2852f8ad450912583067a145a136ce79bdd917a620c44f92:08441047618c2ee1",
+    "gap": {
+     "ua": 3.111112117767334,
+     "ra": 0.13827085494995117,
+     "ta": 0.5299985408782959,
+     "mia": 1.3777777777777782,
+     "avg": 1.2892898228433398
+    }
+   }
+  },
+  "s44": {
+   "retrain": {
+    "ua": 5.42222261428833,
+    "ra": 100.0,
+    "ta": 94.29999589920044,
+    "mia": 12.977777777777778,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/eval-only/canonical/seed44_split44/retrain.pt",
+    "key": "3c57b4f19f5910c45164b58359c8024388e512cccff13e2eff50b643b19e40e1:a47ed7a9e4774e06"
+   },
+   "ft": {
+    "ua": 6.777775287628174,
+    "ra": 96.67160511016846,
+    "ta": 90.71999788284302,
+    "mia": 12.377777777777776,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed44_split44/ft.pt",
+    "key": "72d71876bde79595e9104c327992baf2b636f0d16599b70471608c89557461eb:a47ed7a9e4774e06",
+    "gap": {
+     "ua": 1.3555526733398438,
+     "ra": 3.328394889831543,
+     "ta": 3.579998016357422,
+     "mia": 0.6000000000000014,
+     "avg": 2.2159863948822025
+    }
+   },
+   "ga": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 94.96999979019165,
+    "mia": 0.22222222222222365,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed44_split44/ga.pt",
+    "key": "c6008daed1d43e1dcb6ee86878bf3bdcddcff7df72cb3e83a454add3cd0d8bf0:a47ed7a9e4774e06",
+    "gap": {
+     "ua": 5.42222261428833,
+     "ra": 0.0,
+     "ta": 0.6700038909912109,
+     "mia": 12.755555555555555,
+     "avg": 4.7119455152087735
+    }
+   },
+   "rl": {
+    "ua": 2.311110496520996,
+    "ra": 99.71604943275452,
+    "ta": 93.80999803543091,
+    "mia": 13.555555555555554,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed44_split44/rl.pt",
+    "key": "67d2815fa5b04381db54b4114b21c1d374a5670e450c1298eb07aa151a9fb086:a47ed7a9e4774e06",
+    "gap": {
+     "ua": 3.111112117767334,
+     "ra": 0.2839505672454834,
+     "ta": 0.48999786376953125,
+     "mia": 0.5777777777777757,
+     "avg": 1.115709581640031
+    }
+   },
+   "l1_sparse": {
+    "ua": 7.333332300186157,
+    "ra": 95.82222700119019,
+    "ta": 89.23999667167664,
+    "mia": 13.311111111111106,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed44_split44/l1_sparse.pt",
+    "key": "f943625459aea4d92b3f2ca8e97afcf10802cb9233e1b95f6ee70bb34151853b:a47ed7a9e4774e06",
+    "gap": {
+     "ua": 1.9111096858978271,
+     "ra": 4.1777729988098145,
+     "ta": 5.059999227523804,
+     "mia": 0.3333333333333286,
+     "avg": 2.8705538113911935
+    }
+   }
+  },
+  "s48": {
+   "retrain": {
+    "ua": 5.044442415237427,
+    "ra": 100.0,
+    "ta": 94.1100001335144,
+    "mia": 13.311111111111106,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed48_split48/retrain.pt",
+    "key": "e21c44ff46b09e727e215caa2dafe9f36fc4d55d167d27141a50e642da7f08f9:e00aad0c879a901c"
+   },
+   "ft": {
+    "ua": 4.4222235679626465,
+    "ra": 98.19012880325317,
+    "ta": 91.839998960495,
+    "mia": 9.644444444444444,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed48_split48/ft.pt",
+    "key": "f57dd8bb3995df791cd7fb0326aeb763b77d6df6d38e60afe407c5650fb8d033:e00aad0c879a901c",
+    "gap": {
+     "ua": 0.6222188472747803,
+     "ra": 1.8098711967468262,
+     "ta": 2.270001173019409,
+     "mia": 3.6666666666666625,
+     "avg": 2.0921894709269195
+    }
+   },
+   "ga": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 95.01999616622925,
+    "mia": 0.4444444444444473,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed48_split48/ga.pt",
+    "key": "49db03b5ae98e1b285bfb62d7cb735abcc76589db346e399950a8420de07b953:e00aad0c879a901c",
+    "gap": {
+     "ua": 5.044442415237427,
+     "ra": 0.0,
+     "ta": 0.9099960327148438,
+     "mia": 12.86666666666666,
+     "avg": 4.705276278654733
+    }
+   },
+   "rl": {
+    "ua": 2.3555517196655273,
+    "ra": 99.84444975852966,
+    "ta": 94.05999779701233,
+    "mia": 14.111111111111107,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed48_split48/rl.pt",
+    "key": "e8d6293e407a23fdf85d7ea976fb29c10bc12be045df06a9e918e08ab7eaea0e:e00aad0c879a901c",
+    "gap": {
+     "ua": 2.6888906955718994,
+     "ra": 0.15555024147033691,
+     "ta": 0.050002336502075195,
+     "mia": 0.8000000000000007,
+     "avg": 0.9236108183860781
+    }
+   },
+   "l1_sparse": {
+    "ua": 6.244444847106934,
+    "ra": 96.65185213088989,
+    "ta": 90.27999639511108,
+    "mia": 11.86666666666667,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed48_split48/l1_sparse.pt",
+    "key": "8890b7f0e819762f0c6b855c620697737c0b55341f5a72d7c910dae867d2f49d:e00aad0c879a901c",
+    "gap": {
+     "ua": 1.2000024318695068,
+     "ra": 3.3481478691101074,
+     "ta": 3.8300037384033203,
+     "mia": 1.4444444444444358,
+     "avg": 2.4556496209568426
+    }
+   }
+  },
+  "o442": {
+   "retrain": {
+    "ua": 5.022221803665161,
+    "ra": 100.0,
+    "ta": 94.6399986743927,
+    "mia": 12.511111111111106,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed442/baselines/seed442_split42/retrain.pt",
+    "key": "d100a3e09e6269ceea718925e3c1d39c934a052416e4c16b86a3aba7cc924e6e:08441047618c2ee1"
+   },
+   "ft": {
+    "ua": 4.777777194976807,
+    "ra": 97.70123958587646,
+    "ta": 91.839998960495,
+    "mia": 10.444444444444445,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o442/seed442_split42/ft.pt",
+    "key": "c58a1551f8c3428f0243b58162812e78efd7fe045b4c1c8fbdf9bc33a49f16ae:08441047618c2ee1",
+    "gap": {
+     "ua": 0.2444446086883545,
+     "ra": 2.298760414123535,
+     "ta": 2.799999713897705,
+     "mia": 2.066666666666661,
+     "avg": 1.852467850844064
+    }
+   },
+   "ga": {
+    "ua": 0.022220611572265625,
+    "ra": 100.0,
+    "ta": 94.62999701499939,
+    "mia": 0.3555555555555534,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o442/seed442_split42/ga.pt",
+    "key": "3ababd2c34f89d1ecca6e0b2cac893955ec021639b8462d8265c9e6fbabebc2a:08441047618c2ee1",
+    "gap": {
+     "ua": 5.0000011920928955,
+     "ra": 0.0,
+     "ta": 0.010001659393310547,
+     "mia": 12.155555555555551,
+     "avg": 4.291389601760439
+    }
+   },
+   "rl": {
+    "ua": 2.222222089767456,
+    "ra": 99.81728792190552,
+    "ta": 94.05999779701233,
+    "mia": 12.977777777777778,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o442/seed442_split42/rl.pt",
+    "key": "dc5574f18f7597945e95521e982786ec99ccf169a92fb7093ca7750ba50a19a7:08441047618c2ee1",
+    "gap": {
+     "ua": 2.799999713897705,
+     "ra": 0.18271207809448242,
+     "ta": 0.5800008773803711,
+     "mia": 0.4666666666666721,
+     "avg": 1.0073448340098077
+    }
+   },
+   "l1_sparse": {
+    "ua": 6.755554676055908,
+    "ra": 95.8790123462677,
+    "ta": 90.00999927520752,
+    "mia": 12.46666666666667,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o442/seed442_split42/l1_sparse.pt",
+    "key": "d66574d7bcf3ffd0b69970a93a5eff2e5d4068944c5e64898d85e18f52d740fa:08441047618c2ee1",
+    "gap": {
+     "ua": 1.733332872390747,
+     "ra": 4.1209876537323,
+     "ta": 4.629999399185181,
+     "mia": 0.044444444444435405,
+     "avg": 2.6321910924381657
+    }
+   }
+  },
+  "s45": {
+   "retrain": {
+    "ua": 5.5777788162231445,
+    "ra": 100.0,
+    "ta": 94.47000026702881,
+    "mia": 13.088888888888894,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed45_split45/retrain.pt",
+    "key": "a9446b7db04d04acd5161c79075569f808721305198c2f43a81251bb34c8c5e6:c57514fa4f772a64"
+   },
+   "ft": {
+    "ua": 5.466663837432861,
+    "ra": 96.66666984558105,
+    "ta": 90.18999934196472,
+    "mia": 11.955555555555552,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed45_split45/ft.pt",
+    "key": "074d86d6986dc9a14e3831d875daf6e491937f3dd8b8e94da11e019d238c0c78:c57514fa4f772a64",
+    "gap": {
+     "ua": 0.1111149787902832,
+     "ra": 3.3333301544189453,
+     "ta": 4.280000925064087,
+     "mia": 1.1333333333333417,
+     "avg": 2.2144448479016643
+    }
+   },
+   "ga": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 95.03999948501587,
+    "mia": 0.20000000000000018,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed45_split45/ga.pt",
+    "key": "b0fcd6053591e803dd30c63f1c9fa1df2db5f2fbb2266c018c1ecfc7780b4858:c57514fa4f772a64",
+    "gap": {
+     "ua": 5.5777788162231445,
+     "ra": 0.0,
+     "ta": 0.5699992179870605,
+     "mia": 12.888888888888893,
+     "avg": 4.7591667307747745
+    }
+   },
+   "rl": {
+    "ua": 2.511107921600342,
+    "ra": 99.58025217056274,
+    "ta": 93.86999607086182,
+    "mia": 13.711111111111107,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed45_split45/rl.pt",
+    "key": "253b3414da62689afa4b1e1285902d08c39cda6af5ff5e81bfb3486847928bbb:c57514fa4f772a64",
+    "gap": {
+     "ua": 3.0666708946228027,
+     "ra": 0.41974782943725586,
+     "ta": 0.6000041961669922,
+     "mia": 0.6222222222222129,
+     "avg": 1.177161285612316
+    }
+   },
+   "l1_sparse": {
+    "ua": 5.555552244186401,
+    "ra": 96.91358208656311,
+    "ta": 89.91999626159668,
+    "mia": 11.288888888888893,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed45_split45/l1_sparse.pt",
+    "key": "6e94665b66981bebefec04a20006629a7880c7e9bd33b11505a126a3d06c6513:c57514fa4f772a64",
+    "gap": {
+     "ua": 0.022226572036743164,
+     "ra": 3.0864179134368896,
+     "ta": 4.550004005432129,
+     "mia": 1.8000000000000007,
+     "avg": 2.3646621227264406
+    }
+   }
+  },
+  "s49": {
+   "retrain": {
+    "ua": 5.24444580078125,
+    "ra": 100.0,
+    "ta": 94.60999965667725,
+    "mia": 13.244444444444447,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed49_split49/retrain.pt",
+    "key": "9feb9450e911411bf616569d8feba13698195d9d990198eada0fe7b02bf3976a:2464dd43d7a73344"
+   },
+   "ft": {
+    "ua": 6.866663694381714,
+    "ra": 96.26666903495789,
+    "ta": 90.32999873161316,
+    "mia": 12.555555555555554,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed49_split49/ft.pt",
+    "key": "b58613ad407105e11f89d332fc4316788d9937a9bc44cad535e4ca5e4db0643f:2464dd43d7a73344",
+    "gap": {
+     "ua": 1.6222178936004639,
+     "ra": 3.7333309650421143,
+     "ta": 4.280000925064087,
+     "mia": 0.6888888888888935,
+     "avg": 2.5811096681488896
+    }
+   },
+   "ga": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 94.9899971485138,
+    "mia": 0.15555555555555323,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed49_split49/ga.pt",
+    "key": "1919eb5b34c278bf7f6d52f21b8da3c2837c2b47079852b1be775bd82c643340:2464dd43d7a73344",
+    "gap": {
+     "ua": 5.24444580078125,
+     "ra": 0.0,
+     "ta": 0.37999749183654785,
+     "mia": 13.088888888888894,
+     "avg": 4.678333045376673
+    }
+   },
+   "rl": {
+    "ua": 2.1777749061584473,
+    "ra": 99.81975555419922,
+    "ta": 93.87999773025513,
+    "mia": 14.177777777777777,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed49_split49/rl.pt",
+    "key": "429bfc1dc96471c6c43da9d17391dcf6dc6002276bc944f3bdfbffd95866d8c7:2464dd43d7a73344",
+    "gap": {
+     "ua": 3.0666708946228027,
+     "ra": 0.18024444580078125,
+     "ta": 0.7300019264221191,
+     "mia": 0.93333333333333,
+     "avg": 1.2275626500447583
+    }
+   },
+   "l1_sparse": {
+    "ua": 7.088887691497803,
+    "ra": 96.37777805328369,
+    "ta": 90.4699981212616,
+    "mia": 13.555555555555554,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed49_split49/l1_sparse.pt",
+    "key": "db0170e998888caf4b2e8a4b5538a60c9448f36d8dfc4338b7657606a984d37d:2464dd43d7a73344",
+    "gap": {
+     "ua": 1.8444418907165527,
+     "ra": 3.6222219467163086,
+     "ta": 4.140001535415649,
+     "mia": 0.31111111111110645,
+     "avg": 2.4794441209899043
+    }
+   }
+  },
+  "s46": {
+   "retrain": {
+    "ua": 5.311107635498047,
+    "ra": 100.0,
+    "ta": 94.22000050544739,
+    "mia": 12.177777777777777,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed46_split46/retrain.pt",
+    "key": "d62921e1b65cf023eb122a871da9f163184aadcfc0b24170193a1ac734a64ab9:eb411cb7097808fa"
+   },
+   "ft": {
+    "ua": 4.688888788223267,
+    "ra": 97.05432653427124,
+    "ta": 90.79999923706055,
+    "mia": 10.599999999999998,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed46_split46/ft.pt",
+    "key": "f90770d92b1b5bc9c25763a4e8de6ce0bfe7cb515066fbb95c0e79448683ef8a:eb411cb7097808fa",
+    "gap": {
+     "ua": 0.6222188472747803,
+     "ra": 2.9456734657287598,
+     "ta": 3.420001268386841,
+     "mia": 1.5777777777777793,
+     "avg": 2.14141783979204
+    }
+   },
+   "ga": {
+    "ua": 0.0,
+    "ra": 99.9975323677063,
+    "ta": 94.94999647140503,
+    "mia": 0.2888888888888941,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed46_split46/ga.pt",
+    "key": "da8fd3d8b14a8769537034fe1df7ce16969c41fbc0e891a6718c2b01314400d4:eb411cb7097808fa",
+    "gap": {
+     "ua": 5.311107635498047,
+     "ra": 0.002467632293701172,
+     "ta": 0.7299959659576416,
+     "mia": 11.888888888888882,
+     "avg": 4.483115030659568
+    }
+   },
+   "rl": {
+    "ua": 1.466667652130127,
+    "ra": 99.87654685974121,
+    "ta": 94.20999884605408,
+    "mia": 12.622222222222224,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed46_split46/rl.pt",
+    "key": "e648746ed151fcdd4a07ffd8517a5af939cf7107197cb8353b23d86359666707:eb411cb7097808fa",
+    "gap": {
+     "ua": 3.84443998336792,
+     "ra": 0.12345314025878906,
+     "ta": 0.010001659393310547,
+     "mia": 0.4444444444444464,
+     "avg": 1.1055848068661165
+    }
+   },
+   "l1_sparse": {
+    "ua": 6.911110877990723,
+    "ra": 95.6024706363678,
+    "ta": 89.19999599456787,
+    "mia": 12.6,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out/seed46_split46/l1_sparse.pt",
+    "key": "0d04e611c0075eb9ea0ccbc374bfa39fd840d5f4e3460ed1eda19625da5a2e22:eb411cb7097808fa",
+    "gap": {
+     "ua": 1.6000032424926758,
+     "ra": 4.397529363632202,
+     "ta": 5.020004510879517,
+     "mia": 0.4222222222222225,
+     "avg": 2.8599398348066543
+    }
+   }
+  },
+  "o142": {
+   "retrain": {
+    "ua": 5.0000011920928955,
+    "ra": 100.0,
+    "ta": 94.67999935150146,
+    "mia": 12.644444444444447,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed142/baselines/seed142_split42/retrain.pt",
+    "key": "bde7718b50fb9bcd5bb4ddd90ed690c3f1a86a163952c91a9fdff540b66fb019:08441047618c2ee1"
+   },
+   "ft": {
+    "ua": 4.933333396911621,
+    "ra": 97.4074125289917,
+    "ta": 90.65999984741211,
+    "mia": 10.533333333333328,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o142/seed142_split42/ft.pt",
+    "key": "ece80888ca1654337e1133836ff06dc9dafa4e4b9f8160dc9adc438110bb4d23:08441047618c2ee1",
+    "gap": {
+     "ua": 0.06666779518127441,
+     "ra": 2.592587471008301,
+     "ta": 4.0199995040893555,
+     "mia": 2.1111111111111196,
+     "avg": 2.1975914703475126
+    }
+   },
+   "ga": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 94.95999813079834,
+    "mia": 0.3777777777777769,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o142/seed142_split42/ga.pt",
+    "key": "46a321b1d91ec3c127945ba50e22b74dbd1ed1ec8d5d9fd2a1c02371695a9f12:08441047618c2ee1",
+    "gap": {
+     "ua": 5.0000011920928955,
+     "ra": 0.0,
+     "ta": 0.279998779296875,
+     "mia": 12.266666666666671,
+     "avg": 4.386666659514111
+    }
+   },
+   "rl": {
+    "ua": 3.066664934158325,
+    "ra": 99.60000514984131,
+    "ta": 93.58999729156494,
+    "mia": 13.222222222222225,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o142/seed142_split42/rl.pt",
+    "key": "f138ea24a806dfc16d3cc646a00090fcb9f9c3401b6cbf44b64e45432fe199cc:08441047618c2ee1",
+    "gap": {
+     "ua": 1.9333362579345703,
+     "ra": 0.3999948501586914,
+     "ta": 1.0900020599365234,
+     "mia": 0.5777777777777775,
+     "avg": 1.0002777364518907
+    }
+   },
+   "l1_sparse": {
+    "ua": 4.688888788223267,
+    "ra": 97.7925956249237,
+    "ta": 91.33999943733215,
+    "mia": 10.222222222222221,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o142/seed142_split42/l1_sparse.pt",
+    "key": "3d7e4a097fbc7a0e69864c3beeea4b2f789bff024ade0ad15ec402d1c4a9a7a1:08441047618c2ee1",
+    "gap": {
+     "ua": 0.3111124038696289,
+     "ra": 2.207404375076294,
+     "ta": 3.3399999141693115,
+     "mia": 2.422222222222226,
+     "avg": 2.070184728834365
+    }
+   }
+  },
+  "o242": {
+   "retrain": {
+    "ua": 5.4888904094696045,
+    "ra": 100.0,
+    "ta": 94.23999786376953,
+    "mia": 12.622222222222224,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed242/baselines/seed242_split42/retrain.pt",
+    "key": "0c042705f7dd37b3ba40357cfbefc42da89bf05513941c1c1ae339c3bce98cb0:08441047618c2ee1"
+   },
+   "ft": {
+    "ua": 6.1555564403533936,
+    "ra": 96.62222266197205,
+    "ta": 90.07999897003174,
+    "mia": 11.844444444444447,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o242/seed242_split42/ft.pt",
+    "key": "bf1c34eaebe6a3d40fdeef7ce3f466d79ee8a0424fe5606b4dc3d86f2d3cd2c6:08441047618c2ee1",
+    "gap": {
+     "ua": 0.6666660308837891,
+     "ra": 3.377777338027954,
+     "ta": 4.159998893737793,
+     "mia": 0.7777777777777768,
+     "avg": 2.2455550101068282
+    }
+   },
+   "ga": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 94.55999732017517,
+    "mia": 0.48888888888889426,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o242/seed242_split42/ga.pt",
+    "key": "4e7c487fd40ff8d230cb040313d350b8539c2a1768fe188ffe03bbc7c1edb08f:08441047618c2ee1",
+    "gap": {
+     "ua": 5.4888904094696045,
+     "ra": 0.0,
+     "ta": 0.31999945640563965,
+     "mia": 12.13333333333333,
+     "avg": 4.485555799802143
+    }
+   },
+   "rl": {
+    "ua": 2.533334493637085,
+    "ra": 99.7234582901001,
+    "ta": 93.81999969482422,
+    "mia": 13.644444444444447,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o242/seed242_split42/rl.pt",
+    "key": "d5562864f4e904840229ad61830a874397e860f000304f7a27bbdd3017422508:08441047618c2ee1",
+    "gap": {
+     "ua": 2.9555559158325195,
+     "ra": 0.27654170989990234,
+     "ta": 0.4199981689453125,
+     "mia": 1.022222222222224,
+     "avg": 1.1685795042249896
+    }
+   },
+   "l1_sparse": {
+    "ua": 5.177778005599976,
+    "ra": 97.27654457092285,
+    "ta": 90.72999954223633,
+    "mia": 11.177777777777775,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o242/seed242_split42/l1_sparse.pt",
+    "key": "040d9b9e478b9af68b15b9e2ede066131c2942ed2c7f4ddf2fbda0fa0f1d9d21:08441047618c2ee1",
+    "gap": {
+     "ua": 0.3111124038696289,
+     "ra": 2.7234554290771484,
+     "ta": 3.509998321533203,
+     "mia": 1.4444444444444482,
+     "avg": 1.9972526497311072
+    }
+   }
+  },
+  "o542": {
+   "retrain": {
+    "ua": 5.177778005599976,
+    "ra": 100.0,
+    "ta": 94.4599986076355,
+    "mia": 12.644444444444447,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed542/baselines/seed542_split42/retrain.pt",
+    "key": "3c4cd3c3422623f827a53f103e58220b73690c48efcba863c358b026940ec218:08441047618c2ee1"
+   },
+   "ft": {
+    "ua": 4.688888788223267,
+    "ra": 97.73086905479431,
+    "ta": 91.0099983215332,
+    "mia": 10.311111111111115,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o542/seed542_split42/ft.pt",
+    "key": "8526ccf5a4bad58fdce306e2f096a17d69f65c04bf93fee0b38d9fbd8eba6abe:08441047618c2ee1",
+    "gap": {
+     "ua": 0.488889217376709,
+     "ra": 2.2691309452056885,
+     "ta": 3.450000286102295,
+     "mia": 2.333333333333332,
+     "avg": 2.135338445504506
+    }
+   },
+   "ga": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 94.62999701499939,
+    "mia": 0.6888888888888944,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o542/seed542_split42/ga.pt",
+    "key": "85b81228de0a297010dc942459537960898ffae2bdc9b700d940655d7981037b:08441047618c2ee1",
+    "gap": {
+     "ua": 5.177778005599976,
+     "ra": 0.0,
+     "ta": 0.1699984073638916,
+     "mia": 11.955555555555552,
+     "avg": 4.325832992129855
+    }
+   },
+   "rl": {
+    "ua": 2.488887310028076,
+    "ra": 99.73827600479126,
+    "ta": 93.50999593734741,
+    "mia": 13.93333333333333,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o542/seed542_split42/rl.pt",
+    "key": "954dcabd0e103d7531a23e93e0c191ada0f009edc244452d554a00c4a692b691:08441047618c2ee1",
+    "gap": {
+     "ua": 2.6888906955718994,
+     "ra": 0.26172399520874023,
+     "ta": 0.9500026702880859,
+     "mia": 1.2888888888888825,
+     "avg": 1.297376562489402
+    }
+   },
+   "l1_sparse": {
+    "ua": 5.444443225860596,
+    "ra": 97.44197726249695,
+    "ta": 90.96999764442444,
+    "mia": 10.977777777777774,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/baselines_confirm/out_o542/seed542_split42/l1_sparse.pt",
+    "key": "916adebb5054cd9b1d99437639244236dc4024b866d96a33840a7f855948ffc6:08441047618c2ee1",
+    "gap": {
+     "ua": 0.2666652202606201,
+     "ra": 2.5580227375030518,
+     "ta": 3.4900009632110596,
+     "mia": 1.6666666666666732,
+     "avg": 1.9953388969103512
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,1008 @@
+{
+ "runs": {
+  "s43": {
+   "retrain": {
+    "ua": 5.199998617172241,
+    "ra": 100.0,
+    "ta": 94.25999522209167,
+    "mia": 12.911111111111106,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/eval-only/canonical/seed43_split43/retrain.pt",
+    "key": "51d23032873bd25f1235650b345eea8b80dd38f907c372ecc9484101f24ba989:71d57ca49330bb0d"
+   },
+   "ours": {
+    "ua": 5.288887023925781,
+    "ra": 99.97531175613403,
+    "ta": 94.54999566078186,
+    "mia": 11.177777777777775,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/devgap/confirm/A_k9_sh-1.5_e10/s43/last.pt",
+    "key": "88e394c6668e43b39706735b184d9df93c1017cf72d8c278a92291b1f7248fcc:71d57ca49330bb0d",
+    "gap": {
+     "ua": 0.08888840675354004,
+     "ra": 0.024688243865966797,
+     "ta": 0.29000043869018555,
+     "mia": 1.7333333333333307,
+     "avg": 0.5342276056607558
+    }
+   },
+   "salun": {
+    "ua": 2.4222195148468018,
+    "ra": 99.57037568092346,
+    "ta": 93.81999969482422,
+    "mia": 12.177777777777777,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/eval-only/canonical/seed43_split43/salun.pt",
+    "key": "2a3d9ee2249b42d0386cf360a5ba8a62241b9d0c8e05a6d967adf3f3cef00b82:71d57ca49330bb0d",
+    "gap": {
+     "ua": 2.7777791023254395,
+     "ra": 0.4296243190765381,
+     "ta": 0.43999552726745605,
+     "mia": 0.733333333333329,
+     "avg": 1.0951830705006906
+    }
+   },
+   "original": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 95.01000046730042,
+    "mia": 0.2666666666666706,
+    "checkpoint": "/srv/home/bohanlyu/data_mlsbench/unlearn-lab/original/cifar10_resnet18_original.pt",
+    "key": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:71d57ca49330bb0d",
+    "gap": {
+     "ua": 5.199998617172241,
+     "ra": 0.0,
+     "ta": 0.7500052452087402,
+     "mia": 12.644444444444435,
+     "avg": 4.648612076706354
+    }
+   }
+  },
+  "s44": {
+   "retrain": {
+    "ua": 5.42222261428833,
+    "ra": 100.0,
+    "ta": 94.29999589920044,
+    "mia": 12.977777777777778,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/eval-only/canonical/seed44_split44/retrain.pt",
+    "key": "3c57b4f19f5910c45164b58359c8024388e512cccff13e2eff50b643b19e40e1:a47ed7a9e4774e06"
+   },
+   "ours": {
+    "ua": 5.24444580078125,
+    "ra": 99.85926151275635,
+    "ta": 93.50999593734741,
+    "mia": 9.533333333333339,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/devgap/confirm/A_k9_sh-1.5_e10/s44/last.pt",
+    "key": "e59a177c12d23f66b581e802bece8a589a15fdd4bbe896dccbb7bcb9e43f73fd:a47ed7a9e4774e06",
+    "gap": {
+     "ua": 0.17777681350708008,
+     "ra": 0.14073848724365234,
+     "ta": 0.7899999618530273,
+     "mia": 3.4444444444444393,
+     "avg": 1.1382399267620498
+    }
+   },
+   "salun": {
+    "ua": 3.511112928390503,
+    "ra": 99.24197793006897,
+    "ta": 93.39999556541443,
+    "mia": 13.044444444444448,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/eval-only/canonical/seed44_split44/salun.pt",
+    "key": "bac1d00dff7c547645f1058176d514dc04330ae9d687c6f4a7c819d3d4fb089c:a47ed7a9e4774e06",
+    "gap": {
+     "ua": 1.9111096858978271,
+     "ra": 0.7580220699310303,
+     "ta": 0.9000003337860107,
+     "mia": 0.06666666666666998,
+     "avg": 0.9089496890703845
+    }
+   },
+   "original": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 95.01000046730042,
+    "mia": 0.15555555555555323,
+    "checkpoint": "/srv/home/bohanlyu/data_mlsbench/unlearn-lab/original/cifar10_resnet18_original.pt",
+    "key": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:a47ed7a9e4774e06",
+    "gap": {
+     "ua": 5.42222261428833,
+     "ra": 0.0,
+     "ta": 0.7100045680999756,
+     "mia": 12.822222222222225,
+     "avg": 4.738612351152632
+    }
+   }
+  },
+  "s45": {
+   "retrain": {
+    "ua": 5.5777788162231445,
+    "ra": 100.0,
+    "ta": 94.47000026702881,
+    "mia": 13.088888888888894,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed45_split45/retrain.pt",
+    "key": "a9446b7db04d04acd5161c79075569f808721305198c2f43a81251bb34c8c5e6:c57514fa4f772a64"
+   },
+   "ours": {
+    "ua": 5.022221803665161,
+    "ra": 99.90370869636536,
+    "ta": 93.75999569892883,
+    "mia": 10.177777777777774,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/devgap/confirm/A_k9_sh-1.5_e10/s45/last.pt",
+    "key": "63481d437e8fbfbf2b3cc78f562faa05c1351f0fe0f36bece21c752b16c16d58:c57514fa4f772a64",
+    "gap": {
+     "ua": 0.5555570125579834,
+     "ra": 0.09629130363464355,
+     "ta": 0.7100045680999756,
+     "mia": 2.9111111111111203,
+     "avg": 1.0682409988509307
+    }
+   },
+   "salun": {
+    "ua": 2.9111087322235107,
+    "ra": 99.08395409584045,
+    "ta": 93.34999918937683,
+    "mia": 12.044444444444446,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed45_split45/salun.pt",
+    "key": "afd751452ea192176c6a129347efb8d986305dc86b7bda998dc5ca186d9364d4:c57514fa4f772a64",
+    "gap": {
+     "ua": 2.666670083999634,
+     "ra": 0.9160459041595459,
+     "ta": 1.1200010776519775,
+     "mia": 1.0444444444444478,
+     "avg": 1.4367903775639013
+    }
+   },
+   "original": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 95.01000046730042,
+    "mia": 0.24444444444444713,
+    "checkpoint": "/srv/home/bohanlyu/data_mlsbench/unlearn-lab/original/cifar10_resnet18_original.pt",
+    "key": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:c57514fa4f772a64",
+    "gap": {
+     "ua": 5.5777788162231445,
+     "ra": 0.0,
+     "ta": 0.5400002002716064,
+     "mia": 12.844444444444447,
+     "avg": 4.7405558652348
+    }
+   }
+  },
+  "s46": {
+   "retrain": {
+    "ua": 5.311107635498047,
+    "ra": 100.0,
+    "ta": 94.22000050544739,
+    "mia": 12.177777777777777,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed46_split46/retrain.pt",
+    "key": "d62921e1b65cf023eb122a871da9f163184aadcfc0b24170193a1ac734a64ab9:eb411cb7097808fa"
+   },
+   "ours": {
+    "ua": 5.711108446121216,
+    "ra": 99.91605281829834,
+    "ta": 93.94999742507935,
+    "mia": 10.777777777777775,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/devgap/confirm/A_k9_sh-1.5_e10/s46/last.pt",
+    "key": "a80b5560a75ad7399fbeab6176fb738cced8fae422540aa0fbeb68d78a8a1d17:eb411cb7097808fa",
+    "gap": {
+     "ua": 0.40000081062316895,
+     "ra": 0.08394718170166016,
+     "ta": 0.270003080368042,
+     "mia": 1.4000000000000021,
+     "avg": 0.5384877681732183
+    }
+   },
+   "salun": {
+    "ua": 2.977776527404785,
+    "ra": 99.25679564476013,
+    "ta": 93.39999556541443,
+    "mia": 11.533333333333328,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed46_split46/salun.pt",
+    "key": "7bb80c47d2e1ee34cc1db283d7f7e7842e73510ede7ea1fb5f416b1fc64de4fe:eb411cb7097808fa",
+    "gap": {
+     "ua": 2.3333311080932617,
+     "ra": 0.7432043552398682,
+     "ta": 0.820004940032959,
+     "mia": 0.6444444444444493,
+     "avg": 1.1352462119526345
+    }
+   },
+   "original": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 95.01000046730042,
+    "mia": 0.20000000000000018,
+    "checkpoint": "/srv/home/bohanlyu/data_mlsbench/unlearn-lab/original/cifar10_resnet18_original.pt",
+    "key": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:eb411cb7097808fa",
+    "gap": {
+     "ua": 5.311107635498047,
+     "ra": 0.0,
+     "ta": 0.7899999618530273,
+     "mia": 11.977777777777778,
+     "avg": 4.519721343782213
+    }
+   }
+  },
+  "s47": {
+   "retrain": {
+    "ua": 5.24444580078125,
+    "ra": 100.0,
+    "ta": 94.40999627113342,
+    "mia": 12.844444444444447,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed47_split47/retrain.pt",
+    "key": "93c706f3773f7d7dbb161c26add64b1dd09ccf27e110a6a8d185336118cc4f4d:380efe496acb1acc"
+   },
+   "ours": {
+    "ua": 5.466663837432861,
+    "ra": 99.92098808288574,
+    "ta": 94.13999915122986,
+    "mia": 10.088888888888892,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/devgap/confirm/A_k9_sh-1.5_e10/s47/last.pt",
+    "key": "a8110d19cca60420082699df8516822467b658381af4f04aa9bc5c3538b04096:380efe496acb1acc",
+    "gap": {
+     "ua": 0.22221803665161133,
+     "ra": 0.07901191711425781,
+     "ta": 0.26999711990356445,
+     "mia": 2.7555555555555546,
+     "avg": 0.8316956573062471
+    }
+   },
+   "salun": {
+    "ua": 3.066664934158325,
+    "ra": 99.30123686790466,
+    "ta": 93.45999956130981,
+    "mia": 13.711111111111107,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed47_split47/salun.pt",
+    "key": "385a9d0e958cc18556462ee78c0d9cf85e98a8088894b9bc0c60cf11c8ebb186:380efe496acb1acc",
+    "gap": {
+     "ua": 2.177780866622925,
+     "ra": 0.6987631320953369,
+     "ta": 0.9499967098236084,
+     "mia": 0.86666666666666,
+     "avg": 1.1733018438021325
+    }
+   },
+   "original": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 95.01000046730042,
+    "mia": 0.40000000000000036,
+    "checkpoint": "/srv/home/bohanlyu/data_mlsbench/unlearn-lab/original/cifar10_resnet18_original.pt",
+    "key": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:380efe496acb1acc",
+    "gap": {
+     "ua": 5.24444580078125,
+     "ra": 0.0,
+     "ta": 0.6000041961669922,
+     "mia": 12.444444444444446,
+     "avg": 4.572223610348172
+    }
+   }
+  },
+  "s48": {
+   "retrain": {
+    "ua": 5.044442415237427,
+    "ra": 100.0,
+    "ta": 94.1100001335144,
+    "mia": 13.311111111111106,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed48_split48/retrain.pt",
+    "key": "e21c44ff46b09e727e215caa2dafe9f36fc4d55d167d27141a50e642da7f08f9:e00aad0c879a901c"
+   },
+   "ours": {
+    "ua": 5.377775430679321,
+    "ra": 99.90617632865906,
+    "ta": 94.06999945640564,
+    "mia": 9.911111111111115,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/devgap/confirm/A_k9_sh-1.5_e10/s48/last.pt",
+    "key": "b021ce4c897b95baade68ca658fa29b4ef682ffbda19b3b4ea1a225a90d89e6e:e00aad0c879a901c",
+    "gap": {
+     "ua": 0.33333301544189453,
+     "ra": 0.09382367134094238,
+     "ta": 0.04000067710876465,
+     "mia": 3.3999999999999915,
+     "avg": 0.9667893409728983
+    }
+   },
+   "salun": {
+    "ua": 2.2000014781951904,
+    "ra": 99.58025217056274,
+    "ta": 93.70999932289124,
+    "mia": 12.53333333333333,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed48_split48/salun.pt",
+    "key": "5abee71afa2a8c9be46c8cbfbb7c206c6f459830406f1b01f21d8fadcdd2a0e0:e00aad0c879a901c",
+    "gap": {
+     "ua": 2.8444409370422363,
+     "ra": 0.41974782943725586,
+     "ta": 0.40000081062316895,
+     "mia": 0.7777777777777768,
+     "avg": 1.1104918387201095
+    }
+   },
+   "original": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 95.01000046730042,
+    "mia": 0.3777777777777769,
+    "checkpoint": "/srv/home/bohanlyu/data_mlsbench/unlearn-lab/original/cifar10_resnet18_original.pt",
+    "key": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:e00aad0c879a901c",
+    "gap": {
+     "ua": 5.044442415237427,
+     "ra": 0.0,
+     "ta": 0.9000003337860107,
+     "mia": 12.93333333333333,
+     "avg": 4.719444020589192
+    }
+   }
+  },
+  "s49": {
+   "retrain": {
+    "ua": 5.24444580078125,
+    "ra": 100.0,
+    "ta": 94.60999965667725,
+    "mia": 13.244444444444447,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed49_split49/retrain.pt",
+    "key": "9feb9450e911411bf616569d8feba13698195d9d990198eada0fe7b02bf3976a:2464dd43d7a73344"
+   },
+   "ours": {
+    "ua": 5.533331632614136,
+    "ra": 99.94814991950989,
+    "ta": 94.00999546051025,
+    "mia": 9.999999999999998,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/devgap/confirm/A_k9_sh-1.5_e10/s49/last.pt",
+    "key": "dd0c58dca33c7d885bd2864abc059ec0b1a4f106816cf434c4ae05fd6f2bc96d:2464dd43d7a73344",
+    "gap": {
+     "ua": 0.28888583183288574,
+     "ra": 0.051850080490112305,
+     "ta": 0.6000041961669922,
+     "mia": 3.244444444444449,
+     "avg": 1.0462961382336098
+    }
+   },
+   "salun": {
+    "ua": 2.222222089767456,
+    "ra": 99.61975812911987,
+    "ta": 93.75,
+    "mia": 12.222222222222223,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/fresh_splits/out/seed49_split49/salun.pt",
+    "key": "d8d93e8650821db53aee0337f76d854808d8c1e589edf637a7165f7ee61ebe3c:2464dd43d7a73344",
+    "gap": {
+     "ua": 3.022223711013794,
+     "ra": 0.38024187088012695,
+     "ta": 0.8599996566772461,
+     "mia": 1.022222222222224,
+     "avg": 1.3211718651983477
+    }
+   },
+   "original": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 95.01000046730042,
+    "mia": 0.24444444444444713,
+    "checkpoint": "/srv/home/bohanlyu/data_mlsbench/unlearn-lab/original/cifar10_resnet18_original.pt",
+    "key": "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:2464dd43d7a73344",
+    "gap": {
+     "ua": 5.24444580078125,
+     "ra": 0.0,
+     "ta": 0.40000081062316895,
+     "mia": 13.0,
+     "avg": 4.661111652851105
+    }
+   }
+  },
+  "o142": {
+   "retrain": {
+    "ua": 5.0000011920928955,
+    "ra": 100.0,
+    "ta": 94.67999935150146,
+    "mia": 12.644444444444447,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed142/baselines/seed142_split42/retrain.pt",
+    "key": "bde7718b50fb9bcd5bb4ddd90ed690c3f1a86a163952c91a9fdff540b66fb019:08441047618c2ee1"
+   },
+   "ours": {
+    "ua": 5.933332443237305,
+    "ra": 99.92346167564392,
+    "ta": 94.08999681472778,
+    "mia": 11.2,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/devgap/confirm/A_k9_sh-1.5_e10/o142/last.pt",
+    "key": "2ad104ff1c3d2e58791c7e08226356d73e771c09616fafd817b6f270e3206432:08441047618c2ee1",
+    "gap": {
+     "ua": 0.9333312511444092,
+     "ra": 0.0765383243560791,
+     "ta": 0.5900025367736816,
+     "mia": 1.4444444444444482,
+     "avg": 0.7610791391796545
+    }
+   },
+   "salun": {
+    "ua": 3.600001335144043,
+    "ra": 99.07407760620117,
+    "ta": 93.09999942779541,
+    "mia": 14.400000000000002,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed142/baselines/seed142_split42/salun.pt",
+    "key": "3b14af940e29c66f29c19e9f90e0995c804046030f4417e68f04b51ab442b0b3:08441047618c2ee1",
+    "gap": {
+     "ua": 1.3999998569488525,
+     "ra": 0.9259223937988281,
+     "ta": 1.5799999237060547,
+     "mia": 1.7555555555555546,
+     "avg": 1.4153694325023225
+    }
+   },
+   "original": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 95.03999948501587,
+    "mia": 0.2888888888888941,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/independent_originals/seed142/original.pt",
+    "key": "961b9df4b7ec0d51205d9098abff9a09b7cd8c480ed15d6c200896c5045f2d9c:08441047618c2ee1",
+    "gap": {
+     "ua": 5.0000011920928955,
+     "ra": 0.0,
+     "ta": 0.3600001335144043,
+     "mia": 12.355555555555554,
+     "avg": 4.4288892202907135
+    }
+   }
+  },
+  "o242": {
+   "retrain": {
+    "ua": 5.4888904094696045,
+    "ra": 100.0,
+    "ta": 94.23999786376953,
+    "mia": 12.622222222222224,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed242/baselines/seed242_split42/retrain.pt",
+    "key": "0c042705f7dd37b3ba40357cfbefc42da89bf05513941c1c1ae339c3bce98cb0:08441047618c2ee1"
+   },
+   "ours": {
+    "ua": 6.199997663497925,
+    "ra": 99.92346167564392,
+    "ta": 93.90999674797058,
+    "mia": 11.244444444444445,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/devgap/confirm/A_k9_sh-1.5_e10/o242/last.pt",
+    "key": "d47696200290a841a38b2857f133f12fa544801f576c3ecd27b8a1215b9596ae:08441047618c2ee1",
+    "gap": {
+     "ua": 0.7111072540283203,
+     "ra": 0.0765383243560791,
+     "ta": 0.3300011157989502,
+     "mia": 1.3777777777777782,
+     "avg": 0.623856117990282
+    }
+   },
+   "salun": {
+    "ua": 2.888888120651245,
+    "ra": 99.36543703079224,
+    "ta": 93.52999925613403,
+    "mia": 12.73333333333333,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed242/baselines/seed242_split42/salun.pt",
+    "key": "2ac7356b8650dba15cf1768bf98a27025da279e5ae935aa5db3c56fc4d0ada53:08441047618c2ee1",
+    "gap": {
+     "ua": 2.6000022888183594,
+     "ra": 0.6345629692077637,
+     "ta": 0.709998607635498,
+     "mia": 0.11111111111110716,
+     "avg": 1.013918744193182
+    }
+   },
+   "original": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 94.57999467849731,
+    "mia": 0.4666666666666708,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/independent_originals/seed242/original.pt",
+    "key": "826276271c406074f84dfe53a198d9fc52645bf83e16f5f091c2f5b0e3005de2:08441047618c2ee1",
+    "gap": {
+     "ua": 5.4888904094696045,
+     "ra": 0.0,
+     "ta": 0.3399968147277832,
+     "mia": 12.155555555555553,
+     "avg": 4.496110694938235
+    }
+   }
+  },
+  "o342": {
+   "retrain": {
+    "ua": 5.466663837432861,
+    "ra": 100.0,
+    "ta": 94.5099949836731,
+    "mia": 12.86666666666667,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed342/baselines/seed342_split42/retrain.pt",
+    "key": "82fa01af3dff9c7d44e63d21c8441cd9688c7e5073d55e28cafeb30da55e518f:08441047618c2ee1"
+   },
+   "ours": {
+    "ua": 6.444442272186279,
+    "ra": 99.95555877685547,
+    "ta": 93.7999963760376,
+    "mia": 12.511111111111106,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/devgap/confirm/A_k9_sh-1.5_e10/o342/last.pt",
+    "key": "4bb236e1ea412a6cb900753107b0335d6ee2ce6cf0adab096b92812a1dc52ab6:08441047618c2ee1",
+    "gap": {
+     "ua": 0.977778434753418,
+     "ra": 0.04444122314453125,
+     "ta": 0.709998607635498,
+     "mia": 0.35555555555556495,
+     "avg": 0.521943455272253
+    }
+   },
+   "salun": {
+    "ua": 2.9333293437957764,
+    "ra": 99.1777777671814,
+    "ta": 93.23999881744385,
+    "mia": 14.311111111111108,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed342/baselines/seed342_split42/salun.pt",
+    "key": "d6191a58d190e52564458d14d88f190bdf3b1210f1e01866205c9032da970a03:08441047618c2ee1",
+    "gap": {
+     "ua": 2.533334493637085,
+     "ra": 0.8222222328186035,
+     "ta": 1.269996166229248,
+     "mia": 1.4444444444444375,
+     "avg": 1.5174993342823435
+    }
+   },
+   "original": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 94.65999603271484,
+    "mia": 0.48888888888889426,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/independent_originals/seed342/original.pt",
+    "key": "4e811e3df0353fdd05b9ef266527b056af2ceed9156606b1a02557f6129d81bb:08441047618c2ee1",
+    "gap": {
+     "ua": 5.466663837432861,
+     "ra": 0.0,
+     "ta": 0.15000104904174805,
+     "mia": 12.377777777777776,
+     "avg": 4.4986106660630965
+    }
+   }
+  },
+  "o442": {
+   "retrain": {
+    "ua": 5.022221803665161,
+    "ra": 100.0,
+    "ta": 94.6399986743927,
+    "mia": 12.511111111111106,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed442/baselines/seed442_split42/retrain.pt",
+    "key": "d100a3e09e6269ceea718925e3c1d39c934a052416e4c16b86a3aba7cc924e6e:08441047618c2ee1"
+   },
+   "ours": {
+    "ua": 5.622220039367676,
+    "ra": 99.80494379997253,
+    "ta": 93.48999857902527,
+    "mia": 10.688888888888892,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/devgap/confirm/A_k9_sh-1.5_e10/o442/last.pt",
+    "key": "e831fd82bb1101692ac1dca2d028439173eaf5ce05dad53640eba508c4927209:08441047618c2ee1",
+    "gap": {
+     "ua": 0.5999982357025146,
+     "ra": 0.19505620002746582,
+     "ta": 1.1500000953674316,
+     "mia": 1.822222222222214,
+     "avg": 0.9418191883299065
+    }
+   },
+   "salun": {
+    "ua": 2.4666666984558105,
+    "ra": 99.18025135993958,
+    "ta": 92.94999837875366,
+    "mia": 12.644444444444447,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed442/baselines/seed442_split42/salun.pt",
+    "key": "c1cd9089430e74895457a8c7d06dd53076fdf8bf4c3157adaa7c9aafb6eb7f18:08441047618c2ee1",
+    "gap": {
+     "ua": 2.5555551052093506,
+     "ra": 0.8197486400604248,
+     "ta": 1.690000295639038,
+     "mia": 0.13333333333334174,
+     "avg": 1.2996593435605388
+    }
+   },
+   "original": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 94.75999474525452,
+    "mia": 0.31111111111110645,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/independent_originals/seed442/original.pt",
+    "key": "c30f98117404442c402bab95e43ad316929c53a8ac1fb60bc667b3c3b2413d01:08441047618c2ee1",
+    "gap": {
+     "ua": 5.022221803665161,
+     "ra": 0.0,
+     "ta": 0.1199960708618164,
+     "mia": 12.2,
+     "avg": 4.335554468631744
+    }
+   }
+  },
+  "o542": {
+   "retrain": {
+    "ua": 5.177778005599976,
+    "ra": 100.0,
+    "ta": 94.4599986076355,
+    "mia": 12.644444444444447,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed542/baselines/seed542_split42/retrain.pt",
+    "key": "3c4cd3c3422623f827a53f103e58220b73690c48efcba863c358b026940ec218:08441047618c2ee1"
+   },
+   "ours": {
+    "ua": 6.022220849990845,
+    "ra": 99.9925971031189,
+    "ta": 94.07999515533447,
+    "mia": 12.844444444444447,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/devgap/confirm/A_k9_sh-1.5_e10/o542/last.pt",
+    "key": "c9bc4653b95c79ea31cf93f67c7afed52ebbcb18fce6416f104852acaaada42a:08441047618c2ee1",
+    "gap": {
+     "ua": 0.8444428443908691,
+     "ra": 0.007402896881103516,
+     "ta": 0.3800034523010254,
+     "mia": 0.1999999999999993,
+     "avg": 0.35796229839324933
+    }
+   },
+   "salun": {
+    "ua": 3.8222193717956543,
+    "ra": 98.8987684249878,
+    "ta": 92.57999658584595,
+    "mia": 11.822222222222223,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/final_replicates/original_seed542/baselines/seed542_split42/salun.pt",
+    "key": "d98e04183a54e7f90f5116cae1b76c415af70df82f65396e11b7b65f90c4f2b6:08441047618c2ee1",
+    "gap": {
+     "ua": 1.3555586338043213,
+     "ra": 1.101231575012207,
+     "ta": 1.8800020217895508,
+     "mia": 0.8222222222222246,
+     "avg": 1.289753613207076
+    }
+   },
+   "original": {
+    "ua": 0.0,
+    "ra": 100.0,
+    "ta": 94.65000033378601,
+    "mia": 0.6000000000000005,
+    "checkpoint": "/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out/independent_originals/seed542/original.pt",
+    "key": "35da3def2259ec3ed23d7b08751ea2f11b9ddd9a950541a036b74dd8b77de8e6:08441047618c2ee1",
+    "gap": {
+     "ua": 5.177778005599976,
+     "ra": 0.0,
+     "ta": 0.1900017261505127,
+     "mia": 12.044444444444448,
+     "avg": 4.353056044048734
+    }
+   }
+  }
+ },
+ "cache": {
+  "51d23032873bd25f1235650b345eea8b80dd38f907c372ecc9484101f24ba989:71d57ca49330bb0d": {
+   "ua": 5.199998617172241,
+   "ra": 100.0,
+   "ta": 94.25999522209167,
+   "mia": 12.911111111111106
+  },
+  "88e394c6668e43b39706735b184d9df93c1017cf72d8c278a92291b1f7248fcc:71d57ca49330bb0d": {
+   "ua": 5.288887023925781,
+   "ra": 99.97531175613403,
+   "ta": 94.54999566078186,
+   "mia": 11.177777777777775
+  },
+  "2a3d9ee2249b42d0386cf360a5ba8a62241b9d0c8e05a6d967adf3f3cef00b82:71d57ca49330bb0d": {
+   "ua": 2.4222195148468018,
+   "ra": 99.57037568092346,
+   "ta": 93.81999969482422,
+   "mia": 12.177777777777777
+  },
+  "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:71d57ca49330bb0d": {
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 95.01000046730042,
+   "mia": 0.2666666666666706
+  },
+  "3c57b4f19f5910c45164b58359c8024388e512cccff13e2eff50b643b19e40e1:a47ed7a9e4774e06": {
+   "ua": 5.42222261428833,
+   "ra": 100.0,
+   "ta": 94.29999589920044,
+   "mia": 12.977777777777778
+  },
+  "e59a177c12d23f66b581e802bece8a589a15fdd4bbe896dccbb7bcb9e43f73fd:a47ed7a9e4774e06": {
+   "ua": 5.24444580078125,
+   "ra": 99.85926151275635,
+   "ta": 93.50999593734741,
+   "mia": 9.533333333333339
+  },
+  "bac1d00dff7c547645f1058176d514dc04330ae9d687c6f4a7c819d3d4fb089c:a47ed7a9e4774e06": {
+   "ua": 3.511112928390503,
+   "ra": 99.24197793006897,
+   "ta": 93.39999556541443,
+   "mia": 13.044444444444448
+  },
+  "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:a47ed7a9e4774e06": {
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 95.01000046730042,
+   "mia": 0.15555555555555323
+  },
+  "a9446b7db04d04acd5161c79075569f808721305198c2f43a81251bb34c8c5e6:c57514fa4f772a64": {
+   "ua": 5.5777788162231445,
+   "ra": 100.0,
+   "ta": 94.47000026702881,
+   "mia": 13.088888888888894
+  },
+  "63481d437e8fbfbf2b3cc78f562faa05c1351f0fe0f36bece21c752b16c16d58:c57514fa4f772a64": {
+   "ua": 5.022221803665161,
+   "ra": 99.90370869636536,
+   "ta": 93.75999569892883,
+   "mia": 10.177777777777774
+  },
+  "afd751452ea192176c6a129347efb8d986305dc86b7bda998dc5ca186d9364d4:c57514fa4f772a64": {
+   "ua": 2.9111087322235107,
+   "ra": 99.08395409584045,
+   "ta": 93.34999918937683,
+   "mia": 12.044444444444446
+  },
+  "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:c57514fa4f772a64": {
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 95.01000046730042,
+   "mia": 0.24444444444444713
+  },
+  "d62921e1b65cf023eb122a871da9f163184aadcfc0b24170193a1ac734a64ab9:eb411cb7097808fa": {
+   "ua": 5.311107635498047,
+   "ra": 100.0,
+   "ta": 94.22000050544739,
+   "mia": 12.177777777777777
+  },
+  "a80b5560a75ad7399fbeab6176fb738cced8fae422540aa0fbeb68d78a8a1d17:eb411cb7097808fa": {
+   "ua": 5.711108446121216,
+   "ra": 99.91605281829834,
+   "ta": 93.94999742507935,
+   "mia": 10.777777777777775
+  },
+  "7bb80c47d2e1ee34cc1db283d7f7e7842e73510ede7ea1fb5f416b1fc64de4fe:eb411cb7097808fa": {
+   "ua": 2.977776527404785,
+   "ra": 99.25679564476013,
+   "ta": 93.39999556541443,
+   "mia": 11.533333333333328
+  },
+  "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:eb411cb7097808fa": {
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 95.01000046730042,
+   "mia": 0.20000000000000018
+  },
+  "93c706f3773f7d7dbb161c26add64b1dd09ccf27e110a6a8d185336118cc4f4d:380efe496acb1acc": {
+   "ua": 5.24444580078125,
+   "ra": 100.0,
+   "ta": 94.40999627113342,
+   "mia": 12.844444444444447
+  },
+  "a8110d19cca60420082699df8516822467b658381af4f04aa9bc5c3538b04096:380efe496acb1acc": {
+   "ua": 5.466663837432861,
+   "ra": 99.92098808288574,
+   "ta": 94.13999915122986,
+   "mia": 10.088888888888892
+  },
+  "385a9d0e958cc18556462ee78c0d9cf85e98a8088894b9bc0c60cf11c8ebb186:380efe496acb1acc": {
+   "ua": 3.066664934158325,
+   "ra": 99.30123686790466,
+   "ta": 93.45999956130981,
+   "mia": 13.711111111111107
+  },
+  "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:380efe496acb1acc": {
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 95.01000046730042,
+   "mia": 0.40000000000000036
+  },
+  "bde7718b50fb9bcd5bb4ddd90ed690c3f1a86a163952c91a9fdff540b66fb019:08441047618c2ee1": {
+   "ua": 5.0000011920928955,
+   "ra": 100.0,
+   "ta": 94.67999935150146,
+   "mia": 12.644444444444447
+  },
+  "2ad104ff1c3d2e58791c7e08226356d73e771c09616fafd817b6f270e3206432:08441047618c2ee1": {
+   "ua": 5.933332443237305,
+   "ra": 99.92346167564392,
+   "ta": 94.08999681472778,
+   "mia": 11.2
+  },
+  "3b14af940e29c66f29c19e9f90e0995c804046030f4417e68f04b51ab442b0b3:08441047618c2ee1": {
+   "ua": 3.600001335144043,
+   "ra": 99.07407760620117,
+   "ta": 93.09999942779541,
+   "mia": 14.400000000000002
+  },
+  "961b9df4b7ec0d51205d9098abff9a09b7cd8c480ed15d6c200896c5045f2d9c:08441047618c2ee1": {
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 95.03999948501587,
+   "mia": 0.2888888888888941
+  },
+  "0c042705f7dd37b3ba40357cfbefc42da89bf05513941c1c1ae339c3bce98cb0:08441047618c2ee1": {
+   "ua": 5.4888904094696045,
+   "ra": 100.0,
+   "ta": 94.23999786376953,
+   "mia": 12.622222222222224
+  },
+  "d47696200290a841a38b2857f133f12fa544801f576c3ecd27b8a1215b9596ae:08441047618c2ee1": {
+   "ua": 6.199997663497925,
+   "ra": 99.92346167564392,
+   "ta": 93.90999674797058,
+   "mia": 11.244444444444445
+  },
+  "2ac7356b8650dba15cf1768bf98a27025da279e5ae935aa5db3c56fc4d0ada53:08441047618c2ee1": {
+   "ua": 2.888888120651245,
+   "ra": 99.36543703079224,
+   "ta": 93.52999925613403,
+   "mia": 12.73333333333333
+  },
+  "826276271c406074f84dfe53a198d9fc52645bf83e16f5f091c2f5b0e3005de2:08441047618c2ee1": {
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 94.57999467849731,
+   "mia": 0.4666666666666708
+  },
+  "82fa01af3dff9c7d44e63d21c8441cd9688c7e5073d55e28cafeb30da55e518f:08441047618c2ee1": {
+   "ua": 5.466663837432861,
+   "ra": 100.0,
+   "ta": 94.5099949836731,
+   "mia": 12.86666666666667
+  },
+  "4bb236e1ea412a6cb900753107b0335d6ee2ce6cf0adab096b92812a1dc52ab6:08441047618c2ee1": {
+   "ua": 6.444442272186279,
+   "ra": 99.95555877685547,
+   "ta": 93.7999963760376,
+   "mia": 12.511111111111106
+  },
+  "d6191a58d190e52564458d14d88f190bdf3b1210f1e01866205c9032da970a03:08441047618c2ee1": {
+   "ua": 2.9333293437957764,
+   "ra": 99.1777777671814,
+   "ta": 93.23999881744385,
+   "mia": 14.311111111111108
+  },
+  "4e811e3df0353fdd05b9ef266527b056af2ceed9156606b1a02557f6129d81bb:08441047618c2ee1": {
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 94.65999603271484,
+   "mia": 0.48888888888889426
+  },
+  "d100a3e09e6269ceea718925e3c1d39c934a052416e4c16b86a3aba7cc924e6e:08441047618c2ee1": {
+   "ua": 5.022221803665161,
+   "ra": 100.0,
+   "ta": 94.6399986743927,
+   "mia": 12.511111111111106
+  },
+  "e831fd82bb1101692ac1dca2d028439173eaf5ce05dad53640eba508c4927209:08441047618c2ee1": {
+   "ua": 5.622220039367676,
+   "ra": 99.80494379997253,
+   "ta": 93.48999857902527,
+   "mia": 10.688888888888892
+  },
+  "c1cd9089430e74895457a8c7d06dd53076fdf8bf4c3157adaa7c9aafb6eb7f18:08441047618c2ee1": {
+   "ua": 2.4666666984558105,
+   "ra": 99.18025135993958,
+   "ta": 92.94999837875366,
+   "mia": 12.644444444444447
+  },
+  "c30f98117404442c402bab95e43ad316929c53a8ac1fb60bc667b3c3b2413d01:08441047618c2ee1": {
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 94.75999474525452,
+   "mia": 0.31111111111110645
+  },
+  "3c4cd3c3422623f827a53f103e58220b73690c48efcba863c358b026940ec218:08441047618c2ee1": {
+   "ua": 5.177778005599976,
+   "ra": 100.0,
+   "ta": 94.4599986076355,
+   "mia": 12.644444444444447
+  },
+  "c9bc4653b95c79ea31cf93f67c7afed52ebbcb18fce6416f104852acaaada42a:08441047618c2ee1": {
+   "ua": 6.022220849990845,
+   "ra": 99.9925971031189,
+   "ta": 94.07999515533447,
+   "mia": 12.844444444444447
+  },
+  "d98e04183a54e7f90f5116cae1b76c415af70df82f65396e11b7b65f90c4f2b6:08441047618c2ee1": {
+   "ua": 3.8222193717956543,
+   "ra": 98.8987684249878,
+   "ta": 92.57999658584595,
+   "mia": 11.822222222222223
+  },
+  "35da3def2259ec3ed23d7b08751ea2f11b9ddd9a950541a036b74dd8b77de8e6:08441047618c2ee1": {
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 94.65000033378601,
+   "mia": 0.6000000000000005
+  },
+  "e21c44ff46b09e727e215caa2dafe9f36fc4d55d167d27141a50e642da7f08f9:e00aad0c879a901c": {
+   "ua": 5.044442415237427,
+   "ra": 100.0,
+   "ta": 94.1100001335144,
+   "mia": 13.311111111111106
+  },
+  "b021ce4c897b95baade68ca658fa29b4ef682ffbda19b3b4ea1a225a90d89e6e:e00aad0c879a901c": {
+   "ua": 5.377775430679321,
+   "ra": 99.90617632865906,
+   "ta": 94.06999945640564,
+   "mia": 9.911111111111115
+  },
+  "5abee71afa2a8c9be46c8cbfbb7c206c6f459830406f1b01f21d8fadcdd2a0e0:e00aad0c879a901c": {
+   "ua": 2.2000014781951904,
+   "ra": 99.58025217056274,
+   "ta": 93.70999932289124,
+   "mia": 12.53333333333333
+  },
+  "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:e00aad0c879a901c": {
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 95.01000046730042,
+   "mia": 0.3777777777777769
+  },
+  "9feb9450e911411bf616569d8feba13698195d9d990198eada0fe7b02bf3976a:2464dd43d7a73344": {
+   "ua": 5.24444580078125,
+   "ra": 100.0,
+   "ta": 94.60999965667725,
+   "mia": 13.244444444444447
+  },
+  "dd0c58dca33c7d885bd2864abc059ec0b1a4f106816cf434c4ae05fd6f2bc96d:2464dd43d7a73344": {
+   "ua": 5.533331632614136,
+   "ra": 99.94814991950989,
+   "ta": 94.00999546051025,
+   "mia": 9.999999999999998
+  },
+  "d8d93e8650821db53aee0337f76d854808d8c1e589edf637a7165f7ee61ebe3c:2464dd43d7a73344": {
+   "ua": 2.222222089767456,
+   "ra": 99.61975812911987,
+   "ta": 93.75,
+   "mia": 12.222222222222223
+  },
+  "a136ae6dcb21ddcf4fa2adede89c2d7f3dd22c00217c1913ed3929aef95d9e58:2464dd43d7a73344": {
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 95.01000046730042,
+   "mia": 0.24444444444444713
+  }
+ },
+ "aggregate": {
+  "original": {
+   "n": 12,
+   "ua": 0.0,
+   "ra": 100.0,
+   "ta": 94.89666571219762,
+   "mia": 0.33703703703703847,
+   "gap_ua": 5.266666412353516,
+   "gap_ra": 0.0,
+   "gap_ta": 0.4875009258588155,
+   "gap_mia": 12.483333333333333,
+   "gap_avg": 4.559375167886416,
+   "gap_avg_sd": 0.14397287752342294,
+   "fixed_ref_gap_avg": 4.598807168790145,
+   "fixed_ref_gap_avg_sd": 0.07287729698153182
+  },
+  "ours": {
+   "n": 12,
+   "ua": 5.655553936958313,
+   "ra": 99.91913934548695,
+   "ta": 93.94666353861491,
+   "mia": 10.846296296296297,
+   "gap_ua": 0.5111098289489746,
+   "gap_ra": 0.08086065451304118,
+   "gap_ta": 0.5108346541722616,
+   "gap_mia": 2.0074074074074075,
+   "gap_avg": 0.7775531362604212,
+   "gap_avg_sd": 0.2583494454017336,
+   "fixed_ref_gap_avg": 0.6765766077306534,
+   "fixed_ref_gap_avg_sd": 0.22052434428047363
+  },
+  "salun": {
+   "n": 12,
+   "ua": 2.918517589569092,
+   "ra": 99.27922189235687,
+   "ta": 93.35749844710033,
+   "mia": 12.764814814814814,
+   "gap_ua": 2.348148822784424,
+   "gap_ra": 0.7207781076431274,
+   "gap_ta": 1.0516663392384846,
+   "gap_mia": 0.7851851851851852,
+   "gap_avg": 1.2264446137128053,
+   "gap_avg_sd": 0.18359507563442223,
+   "fixed_ref_gap_avg": 1.218836814039725,
+   "fixed_ref_gap_avg_sd": 0.1599233456758718
+  },
+  "retrain": {
+   "n": 12,
+   "ua": 5.266666412353516,
+   "ra": 100.0,
+   "ta": 94.4091647863388,
+   "mia": 12.820370370370371
+  }
+ }
+}

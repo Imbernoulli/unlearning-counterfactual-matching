@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-07T02:55:12.488994+00:00",
+  "purpose": "Matched non-saturating ascent controls registered before launch: inherited CLI margin_ascent actually minimizes mean true-class log-odds, not a signed margin or negative CE. Tests whether explicit endpoints add value.",
+  "sources": {
+    "research/unlearning_matching/calibration_study.py": "b25cf925c71e81932023084179cdc5910bb135db3812214b84a9fc8a610f4e7b",
+    "research/unlearning_matching/fixed_quantile.py": "760a2147acee205d2c34c0fbc4113be60161cea7bde74dd977bab4d81f625c79",
+    "research/unlearning_matching/run_experiments.py": "b15c5d8fbc72977acc4306c12687b4f536d268a9c87db2519b623be47ec975f6"
+  },
+  "candidates": [
+    {
+      "id": "r5_mean_logodds_ascent_C",
+      "schedule": "C",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 30,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "margin_ascent",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/calibration_study.py",
+      "extra_args": []
+    },
+    {
+      "id": "r5_mean_logodds_ascent_D",
+      "schedule": "D",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 30,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "margin_ascent",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/calibration_study.py",
+      "extra_args": []
+    }
+  ],
+  "actual_loss": "mean(logit_true - logsumexp(logits_nontrue)); minimize",
+  "target_note": "Inherited target construction is performed but targets are unused by this control; include this overhead.",
+  "official_test_uploaded": false,
+  "retrain_uploaded": false,
+  "audit_predicted": false,
+  "maximum_optimization_trials": 60,
+  "previous_registered_scientific_trials": 56,
+  "previous_disk_failed_attempts": 2,
+  "round5_trials": 2,
+  "maximum_registered_scientific_trials": 58,
+  "maximum_registered_launch_attempts_including_disk_failures": 60,
+  "comparison": "Match C/D geometry_none or corresponding all-network global MSE using the first 30 epochs; schedules have different sample/step budgets. Fixed utility constraints and selection J unchanged."
+}

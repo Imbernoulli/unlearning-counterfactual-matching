@@ -1,0 +1,359 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-07T02:38:27.164365+00:00",
+  "purpose": "third calibration-only round: localized updates, gradient geometry, dynamic ranks, and matched controls",
+  "sources": {
+    "research/unlearning_matching/calibration_study.py": "b25cf925c71e81932023084179cdc5910bb135db3812214b84a9fc8a610f4e7b",
+    "research/unlearning_matching/rank_donor.py": "6428ab38c16afc5dbf78805a4b89a5c357cd8b9ebe55f187eeeeff5381e1ded4",
+    "research/unlearning_matching/fixed_quantile.py": "760a2147acee205d2c34c0fbc4113be60161cea7bde74dd977bab4d81f625c79",
+    "research/unlearning_matching/run_experiments.py": "b15c5d8fbc72977acc4306c12687b4f536d268a9c87db2519b623be47ec975f6",
+    "research/unlearning_matching/localized_study.py": "de7a205f7c68a82f75d52d3d111323f9932f093105daf79250cf427814f31658",
+    "research/unlearning_matching/geometry_study.py": "c83f6755bd7f20f77b9a91621a0a721ec1dbb939a1f3833950caf83bb54d664b",
+    "research/unlearning_matching/dynamic_rank_study.py": "c8fe533df78e7cbd26106d7cea1e61138c8b434f459d79cb220218a0478d29e7"
+  },
+  "candidates": [
+    {
+      "id": "r3_fc_C_lr003_a01",
+      "schedule": "C",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 100,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/localized_study.py",
+      "extra_args": [
+        "--scope",
+        "fc"
+      ]
+    },
+    {
+      "id": "r3_fc_C_lr01_a01",
+      "schedule": "C",
+      "lr": 0.01,
+      "forget_weight": 0.1,
+      "epochs": 100,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/localized_study.py",
+      "extra_args": [
+        "--scope",
+        "fc"
+      ]
+    },
+    {
+      "id": "r3_fc_D_lr003_a01",
+      "schedule": "D",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 100,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/localized_study.py",
+      "extra_args": [
+        "--scope",
+        "fc"
+      ]
+    },
+    {
+      "id": "r3_fc_D_lr01_a01",
+      "schedule": "D",
+      "lr": 0.01,
+      "forget_weight": 0.1,
+      "epochs": 100,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/localized_study.py",
+      "extra_args": [
+        "--scope",
+        "fc"
+      ]
+    },
+    {
+      "id": "r3_layer4_fc_C_lr003_a01",
+      "schedule": "C",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 100,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/localized_study.py",
+      "extra_args": [
+        "--scope",
+        "layer4_fc"
+      ]
+    },
+    {
+      "id": "r3_layer4_fc_C_lr01_a01",
+      "schedule": "C",
+      "lr": 0.01,
+      "forget_weight": 0.1,
+      "epochs": 100,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/localized_study.py",
+      "extra_args": [
+        "--scope",
+        "layer4_fc"
+      ]
+    },
+    {
+      "id": "r3_layer4_fc_D_lr003_a01",
+      "schedule": "D",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 100,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/localized_study.py",
+      "extra_args": [
+        "--scope",
+        "layer4_fc"
+      ]
+    },
+    {
+      "id": "r3_layer4_fc_D_lr01_a01",
+      "schedule": "D",
+      "lr": 0.01,
+      "forget_weight": 0.1,
+      "epochs": 100,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/localized_study.py",
+      "extra_args": [
+        "--scope",
+        "layer4_fc"
+      ]
+    },
+    {
+      "id": "r3_geometry_none_C",
+      "schedule": "C",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 30,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/geometry_study.py",
+      "extra_args": [
+        "--geometry",
+        "none"
+      ]
+    },
+    {
+      "id": "r3_geometry_none_D",
+      "schedule": "D",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 30,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/geometry_study.py",
+      "extra_args": [
+        "--geometry",
+        "none"
+      ]
+    },
+    {
+      "id": "r3_geometry_symmetric_pcgrad_C",
+      "schedule": "C",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 30,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/geometry_study.py",
+      "extra_args": [
+        "--geometry",
+        "symmetric_pcgrad"
+      ]
+    },
+    {
+      "id": "r3_geometry_symmetric_pcgrad_D",
+      "schedule": "D",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 30,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/geometry_study.py",
+      "extra_args": [
+        "--geometry",
+        "symmetric_pcgrad"
+      ]
+    },
+    {
+      "id": "r3_dynamic_C_a01",
+      "schedule": "C",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 30,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/dynamic_rank_study.py",
+      "extra_args": []
+    },
+    {
+      "id": "r3_dynamic_C_a03",
+      "schedule": "C",
+      "lr": 0.003,
+      "forget_weight": 0.3,
+      "epochs": 30,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/dynamic_rank_study.py",
+      "extra_args": []
+    },
+    {
+      "id": "r3_dynamic_D_a01",
+      "schedule": "D",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 30,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/dynamic_rank_study.py",
+      "extra_args": []
+    },
+    {
+      "id": "r3_dynamic_D_a03",
+      "schedule": "D",
+      "lr": 0.003,
+      "forget_weight": 0.3,
+      "epochs": 30,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/dynamic_rank_study.py",
+      "extra_args": []
+    },
+    {
+      "id": "r3_global_kl_C_a1",
+      "schedule": "C",
+      "lr": 0.003,
+      "forget_weight": 1.0,
+      "epochs": 20,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "kl",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/calibration_study.py",
+      "extra_args": []
+    },
+    {
+      "id": "r3_global_kl_C_a10",
+      "schedule": "C",
+      "lr": 0.003,
+      "forget_weight": 10.0,
+      "epochs": 20,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "kl",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/calibration_study.py",
+      "extra_args": []
+    },
+    {
+      "id": "r3_all_C_100epochs",
+      "schedule": "C",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 100,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/calibration_study.py",
+      "extra_args": []
+    },
+    {
+      "id": "r3_all_D_100epochs",
+      "schedule": "D",
+      "lr": 0.003,
+      "forget_weight": 0.1,
+      "epochs": 100,
+      "bn_mode": "frozen",
+      "target_kind": "global_logodds",
+      "loss": "logodds_mse",
+      "seed": 42,
+      "split_seed": 42,
+      "anchor_weight": 0.1,
+      "entrypoint": "research/unlearning_matching/calibration_study.py",
+      "extra_args": []
+    }
+  ],
+  "official_test_uploaded": false,
+  "retrain_uploaded": false,
+  "audit_predicted": false,
+  "maximum_optimization_trials": 60,
+  "previous_trials_including_smoke": 26,
+  "round3_trials": 20,
+  "early_stopping": "none except hard STOP; all candidates run their complete preregistered epochs"
+}

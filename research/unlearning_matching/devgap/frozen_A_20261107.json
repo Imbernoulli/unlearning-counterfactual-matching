@@ -1,0 +1,13 @@
+{
+ "frozen_utc": "see git commit time of this file (b5bb011, 2026-11-06 22:13:07 PST); earlier hand-written value was wrong",
+ "tag": "A_k9_sh-1.5_e10",
+ "entrypoint": "research/unlearning_matching/devgap/unlearn_dev.py",
+ "args": "--epochs 10 --forget-every 9 --lr .003 --alpha 1 --clip 5 --target-shift -1.5",
+ "method": "per-class 1-D quantile targets from Original's held-out target fold (2500 validation images), shifted by -1.5 log-odds (data-size calibration, chosen on development split 42 only); log-odds MSE on clean eval-mode forget batches at every 9th retain step, forget gradient clipped to 5 then retain CE (augmented, frozen BN) added; SGD lr .003 momentum .9 wd 5e-4; returned model = last.pt after epoch 10",
+ "budget": "10 retain passes, 10.0 forget passes (benchmark cap 10 / 11)",
+ "extra_resources_disclosed": "2500 never-trained validation images and Original outputs on them; clean (non-augmented) forget forwards",
+ "selection_evidence": "dev split 42 vs Retrain-42 on validation replica: AvgGap 0.648 (selection-only 0.972); SalUn 1.147 (1.136). Chosen among ~60 dev runs; endpoint noise across epochs/configs about +-0.4, so the dev number is optimistic.",
+ "confirmation_runs": "s43..s49 fresh deletion splits (canonical Original), o142..o542 independent Originals (split 42 = dev forget set); s42 reported separately",
+ "evaluation": "unchanged tasks/security-machine-unlearning/scripts/evaluate.py evaluate_state on official test; paired Retrain gaps and fixed-reference (dgp.py) gaps; SalUn and Original on identical runs",
+ "ceiling_config_B": "same with --forget-every 1 --epochs 20 (over budget, diagnostic only)"
+}

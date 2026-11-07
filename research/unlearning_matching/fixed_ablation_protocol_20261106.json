@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "created_utc": "2026-11-07T03:03:30.312162+00:00",
+  "purpose": "Prespecified confirmation ablation, conditional on the frozen selected algorithm. This is not a new search grid: no checkpoint/configuration selection and no changes to the final method from its outcomes.",
+  "trigger": "If the final 60-attempt discovery selection chooses joint energy, run its logodds-only ablation.",
+  "method": {
+    "entrypoint": "research/unlearning_matching/energy_study.py",
+    "source_sha256": "63d0de85deca05542f56e7e2e1ba0f709f8b2fb0791c0a627fb71ef6a2235c7c",
+    "only_change": "--statistic joint -> --statistic logodds",
+    "keep_identical": [
+      "learning_rate",
+      "forget_weight",
+      "schedule",
+      "exact_frozen_epoch",
+      "BN_mode",
+      "optimizer",
+      "retain_and_forget_samples",
+      "seed",
+      "split_seed",
+      "Original",
+      "paired_reference"
+    ]
+  },
+  "runs": "Use the already registered canonical 42/43/44 and independent Original142/242/342/442/542 runs.",
+  "checkpoint": "fixed final epoch last.pt even if its own selection J prefers a different endpoint; never reselect",
+  "selection": "None. Register the complete method and stopping epoch before confirmations. Audit and test receipts are one-way. Ablation performance cannot change final method.",
+  "accounting": "Report separately from the 60 capped discovery search attempts; disclose every prespecified fixed confirmation ablation, full compute, and any failures. No fallback hyperparameter variation.",
+  "rationale": "Tests whether adding signed margin to true-class logodds is useful at the identical deployment configuration; no optimality claim for either statistic, and no claim of equal loss scale or FLOPs."
+}
