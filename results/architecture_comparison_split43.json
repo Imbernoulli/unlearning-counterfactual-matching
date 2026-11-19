@@ -1,0 +1,301 @@
+{
+  "code_commit": "87c4a69",
+  "split_seed": 43,
+  "training_seed": 43,
+  "split_manifest_sha256": "d9b00fcf06140b13dfd741d2d1415fa693b5c4b7bbc6a286b1cc5cb1c6cc313d",
+  "calibration_map_sha256": "9def5d9430ad178054631ce15cde1810c1df1bebdad07beaa907503bc064b5bb",
+  "host": "cthulhu1",
+  "timing_context": "RTX 4090. ResNet-18 Retrain shared GPU 5 with an existing workload.",
+  "architectures": {
+    "resnet18": {
+      "architecture": "resnet18",
+      "split_seed": 43,
+      "seed": 43,
+      "data_sha256": "0760cfcaf7f8c679d9086f18f9aac9dc8a04de5349016f8d3e975cc3164229ff",
+      "rows": {
+        "original": {
+          "ua": 0.0,
+          "ra": 100.0,
+          "ta": 94.8699951171875,
+          "mia": 0.33333333333332993,
+          "n_forget": 4500,
+          "n_retain": 40500,
+          "n_test": 10000,
+          "eval_seconds": 21.158672482008114,
+          "checkpoint_sha256": "80cb01a6ecf9ea948c1fc25e99072a973dedacbd3a4083a1be62d7f50584ff9a",
+          "absolute_gaps": {
+            "ua": 5.266666412353516,
+            "ra": 0.0,
+            "ta": 0.6699979305267334,
+            "mia": 12.711111111111117
+          },
+          "avg_gap": 4.661943863497841
+        },
+        "retrain": {
+          "ua": 5.266666412353516,
+          "ra": 100.0,
+          "ta": 94.19999718666077,
+          "mia": 13.044444444444448,
+          "n_forget": 4500,
+          "n_retain": 40500,
+          "n_test": 10000,
+          "eval_seconds": 16.999851233093068,
+          "checkpoint_sha256": "899cc0149c0c34d6e4d6704acbf239ffef8171dc23abfe85630c1c5ce3d16257",
+          "absolute_gaps": {
+            "ua": 0.0,
+            "ra": 0.0,
+            "ta": 0.0,
+            "mia": 0.0
+          },
+          "avg_gap": 0.0
+        },
+        "salun": {
+          "ua": 3.6222219467163086,
+          "ra": 98.59012365341187,
+          "ta": 93.07000041007996,
+          "mia": 13.488888888888884,
+          "n_forget": 4500,
+          "n_retain": 40500,
+          "n_test": 10000,
+          "eval_seconds": 18.891992445103824,
+          "checkpoint_sha256": "93ab6d9dbc09b8843af784bef5e1023fd293842b3a7e30f31388bf3afb3c613a",
+          "absolute_gaps": {
+            "ua": 1.644444465637207,
+            "ra": 1.4098763465881348,
+            "ta": 1.1299967765808105,
+            "mia": 0.44444444444443576
+          },
+          "avg_gap": 1.157190508312647
+        },
+        "a2": {
+          "ua": 5.444443225860596,
+          "ra": 99.9925971031189,
+          "ta": 94.40000057220459,
+          "mia": 13.022222222222224,
+          "n_forget": 4500,
+          "n_retain": 40500,
+          "n_test": 10000,
+          "eval_seconds": 18.21301255002618,
+          "checkpoint_sha256": "bcbe9ad6f59ad58b1091483941e3ace435f1fd8a88a2e9029560e6ab56081955",
+          "absolute_gaps": {
+            "ua": 0.17777681350708008,
+            "ra": 0.007402896881103516,
+            "ta": 0.20000338554382324,
+            "mia": 0.02222222222222392
+          },
+          "avg_gap": 0.10185132953855769
+        }
+      },
+      "timings": {
+        "original": 763.098919958109,
+        "retrain": 683.5100850651506,
+        "salun": 59.77720311610028,
+        "a2": {
+          "target_seconds": 1.0325138410553336,
+          "update_seconds": 49.848673827247694,
+          "forget_passes": 10.0
+        }
+      },
+      "training": {
+        "original": {
+          "architecture": "resnet18",
+          "seed": 43,
+          "split_seed": 43,
+          "membership_sha256": "9f297182f149942ee4a87573dbf16931c2ad8edf1a2c2913349c3580be6d3acc",
+          "n_train": 45000,
+          "epochs": 182,
+          "precision": "bf16",
+          "batch_size": 256,
+          "gpu": "NVIDIA GeForce RTX 4090",
+          "gpu_visible_devices": "GPU-933c12fb-e447-0476-db2a-5f7affa7c35a",
+          "torch_version": "2.11.0+cu130",
+          "parameters": 11173962,
+          "recipe": {
+            "optimizer": "SGD",
+            "lr": 0.1,
+            "momentum": 0.9,
+            "weight_decay": 0.0005,
+            "milestones": [
+              91,
+              136
+            ],
+            "gamma": 0.1
+          },
+          "train_sha256": "af4f586337eda0c26f82c4fd1864403d1ee0385e2ea10df41f8d40c8a70c8b89",
+          "test_used_during_training": false,
+          "seconds": 763.098919958109
+        },
+        "retrain": {
+          "architecture": "resnet18",
+          "seed": 43,
+          "split_seed": 43,
+          "membership_sha256": "30e55d721ab5829d74a03066dd4a505e33917ecfe87003708378ddfd852ec9f6",
+          "n_train": 40500,
+          "epochs": 182,
+          "precision": "bf16",
+          "batch_size": 256,
+          "gpu": "NVIDIA GeForce RTX 4090",
+          "gpu_visible_devices": "GPU-11459b59-a5d0-bfc1-f5e5-4a23b71e2dd4",
+          "torch_version": "2.11.0+cu130",
+          "parameters": 11173962,
+          "recipe": {
+            "optimizer": "SGD",
+            "lr": 0.1,
+            "momentum": 0.9,
+            "weight_decay": 0.0005,
+            "milestones": [
+              91,
+              136
+            ],
+            "gamma": 0.1
+          },
+          "train_sha256": "af4f586337eda0c26f82c4fd1864403d1ee0385e2ea10df41f8d40c8a70c8b89",
+          "test_used_during_training": false,
+          "seconds": 683.5100850651506
+        }
+      }
+    },
+    "vit-tiny": {
+      "architecture": "vit-tiny",
+      "split_seed": 43,
+      "seed": 43,
+      "data_sha256": "0760cfcaf7f8c679d9086f18f9aac9dc8a04de5349016f8d3e975cc3164229ff",
+      "rows": {
+        "original": {
+          "ua": 0.022220611572265625,
+          "ra": 99.98272061347961,
+          "ta": 82.27999806404114,
+          "mia": 0.6888888888888944,
+          "n_forget": 4500,
+          "n_retain": 40500,
+          "n_test": 10000,
+          "eval_seconds": 15.059406135929748,
+          "checkpoint_sha256": "405405ebcda9134fc646a2f735df88f2ddc849bdf825b9a5a9ece29dc9e89184",
+          "absolute_gaps": {
+            "ua": 19.40000057220459,
+            "ra": 0.0,
+            "ta": 1.2099981307983398,
+            "mia": 28.355555555555547
+          },
+          "avg_gap": 12.24138856463962
+        },
+        "retrain": {
+          "ua": 19.422221183776855,
+          "ra": 99.98272061347961,
+          "ta": 81.0699999332428,
+          "mia": 29.04444444444444,
+          "n_forget": 4500,
+          "n_retain": 40500,
+          "n_test": 10000,
+          "eval_seconds": 12.892041373997927,
+          "checkpoint_sha256": "76911ee850ce35cab827edadd453365873032eb1303aa9c8519d88fe8f3ef52d",
+          "absolute_gaps": {
+            "ua": 0.0,
+            "ra": 0.0,
+            "ta": 0.0,
+            "mia": 0.0
+          },
+          "avg_gap": 0.0
+        },
+        "salun": {
+          "ua": 41.13333225250244,
+          "ra": 59.476542472839355,
+          "ta": 57.63999819755554,
+          "mia": 22.177777777777774,
+          "n_forget": 4500,
+          "n_retain": 40500,
+          "n_test": 10000,
+          "eval_seconds": 16.462921840837225,
+          "checkpoint_sha256": "6435facbc797d197e0e86d35a9408d449de63e09c10c05e0c7c3aadf7d40c30b",
+          "absolute_gaps": {
+            "ua": 21.711111068725586,
+            "ra": 40.50617814064026,
+            "ta": 23.430001735687256,
+            "mia": 6.866666666666667
+          },
+          "avg_gap": 23.128489402929944
+        },
+        "a2": {
+          "ua": 15.733331441879272,
+          "ra": 99.0049421787262,
+          "ta": 79.14999723434448,
+          "mia": 22.244444444444444,
+          "n_forget": 4500,
+          "n_retain": 40500,
+          "n_test": 10000,
+          "eval_seconds": 16.082959874067456,
+          "checkpoint_sha256": "c0a28835720e8dfb770ac5ee2fac3f9c09a45566d88c389cf5f4cdd6575426bb",
+          "absolute_gaps": {
+            "ua": 3.688889741897583,
+            "ra": 0.977778434753418,
+            "ta": 1.9200026988983154,
+            "mia": 6.799999999999997
+          },
+          "avg_gap": 3.3466677188873284
+        }
+      },
+      "timings": {
+        "original": 730.4219056889415,
+        "retrain": 656.1944898450747,
+        "salun": 52.39616975490935,
+        "a2": {
+          "target_seconds": 0.7940974510274827,
+          "update_seconds": 37.630265404935926,
+          "forget_passes": 10.0
+        }
+      },
+      "training": {
+        "original": {
+          "architecture": "vit-tiny",
+          "seed": 43,
+          "split_seed": 43,
+          "membership_sha256": "9f297182f149942ee4a87573dbf16931c2ad8edf1a2c2913349c3580be6d3acc",
+          "n_train": 45000,
+          "epochs": 182,
+          "precision": "bf16",
+          "batch_size": 256,
+          "gpu": "NVIDIA GeForce RTX 4090",
+          "gpu_visible_devices": "GPU-10f9633c-e84b-6c47-7074-23a76969f13f",
+          "torch_version": "2.11.0+cu130",
+          "parameters": 1212490,
+          "recipe": {
+            "optimizer": "AdamW",
+            "lr": 0.001,
+            "min_lr": 1e-05,
+            "weight_decay": 0.05,
+            "warmup_epochs": 5,
+            "schedule": "cosine"
+          },
+          "train_sha256": "af4f586337eda0c26f82c4fd1864403d1ee0385e2ea10df41f8d40c8a70c8b89",
+          "test_used_during_training": false,
+          "seconds": 730.4219056889415
+        },
+        "retrain": {
+          "architecture": "vit-tiny",
+          "seed": 43,
+          "split_seed": 43,
+          "membership_sha256": "30e55d721ab5829d74a03066dd4a505e33917ecfe87003708378ddfd852ec9f6",
+          "n_train": 40500,
+          "epochs": 182,
+          "precision": "bf16",
+          "batch_size": 256,
+          "gpu": "NVIDIA GeForce RTX 4090",
+          "gpu_visible_devices": "GPU-1fc06066-2552-9edd-343d-80f6b883c9b1",
+          "torch_version": "2.11.0+cu130",
+          "parameters": 1212490,
+          "recipe": {
+            "optimizer": "AdamW",
+            "lr": 0.001,
+            "min_lr": 1e-05,
+            "weight_decay": 0.05,
+            "warmup_epochs": 5,
+            "schedule": "cosine"
+          },
+          "train_sha256": "af4f586337eda0c26f82c4fd1864403d1ee0385e2ea10df41f8d40c8a70c8b89",
+          "test_used_during_training": false,
+          "seconds": 656.1944898450747
+        }
+      }
+    }
+  }
+}
