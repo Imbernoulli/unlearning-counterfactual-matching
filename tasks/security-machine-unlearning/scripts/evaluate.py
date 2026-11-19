@@ -98,8 +98,11 @@ def svc_mia_efficacy(shadow_train_conf, shadow_test_conf, target_conf):
     return float(1.0 - clf.predict(target_conf.reshape(-1, 1)).mean())
 
 
-def evaluate_state(dataset, state, forget_idx, arrays=None, forget_fraction=0.10):
-    """UA / RA / TA / MIA-Efficacy (percent) of a ResNet-18 state_dict.
+def evaluate_state(dataset, state, forget_idx, arrays=None, forget_fraction=0.10, *, model_factory=None):
+    """UA / RA / TA / MIA-Efficacy (percent) for a classifier state_dict.
+
+    The default model is the benchmark ResNet-18. Research callers may pass
+    a zero-argument model factory to reuse these metrics on another architecture.
 
     ``forget_idx``: the forget set (indices into the official train split)
     the run used, which must be a ``forget_fraction`` subset of D; the retain
@@ -116,7 +119,7 @@ def evaluate_state(dataset, state, forget_idx, arrays=None, forget_fraction=0.10
             or len(forget_idx) != int(round(forget_fraction * len(train_idx))):
         raise ValueError(f"forget set is not a {100 * forget_fraction:.0f}% subset of D")
     retain_idx = train_idx[~np.isin(train_idx, forget_idx)]
-    model = common.build_model(dataset)
+    model = common.build_model(dataset) if model_factory is None else model_factory()
     model.load_state_dict(state, strict=True)
     model = model.to(device).float()
 

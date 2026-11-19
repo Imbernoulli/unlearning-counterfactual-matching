@@ -34,7 +34,9 @@ import torch.nn.functional as F
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
+sys.path.insert(0, str(HERE.parent))
 sys.path.insert(0, str(HERE))
+from classification_models import ARCHITECTURES, build_model  # noqa: E402
 import devgap  # noqa: E402
 from model_dists import subsets  # noqa: E402
 
@@ -94,6 +96,9 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--data", required=True)
     p.add_argument("--original", required=True)
+    p.add_argument("--architecture", choices=ARCHITECTURES, default="resnet18")
+    p.add_argument("--training-only", action="store_true",
+                   help="save the fixed endpoint without per-epoch development evaluation")
     p.add_argument("--init", help="start from this checkpoint instead of Original (targets still from Original)")
     p.add_argument("--splits", required=True)
     p.add_argument("--selection-audit", required=True)
@@ -132,6 +137,8 @@ def main():
     p.add_argument("--save-epochs", default="", help="comma list of epochs whose checkpoints are kept")
     p.add_argument("--threads", type=int, default=4)
     a = p.parse_args()
+    if a.training_only and a.retrain_ref:
+        p.error("--training-only and --retrain-ref are mutually exclusive")
     if a.target_ref == "current" and (a.loss == "kl_iproj" or a.dynamic_ranks):
         raise SystemExit("--target-ref current implies dynamic ranks and supports logodds_mse only")
     if a.mixed and a.loss == "kl_iproj":
@@ -167,12 +174,17 @@ def main():
 
     xf, yf = gpu(idx["forget"])
     xr, yr = gpu(retain)
-    sets = {k: gpu(idx[k]) for k in ("forget", "retain_subset", "target", "selection")}
+    eval_keys = ("target",) if a.training_only else ("forget", "retain_subset", "target", "selection")
+    sets = {k: gpu(idx[k]) for k in eval_keys}
     ref = devgap.metrics(np.load(a.retrain_ref)) if a.retrain_ref else None
     ref_sel = devgap.metrics(np.load(a.retrain_ref), held=("selection",)) if a.retrain_ref else None
 
+    torch.cuda.synchronize()
+    target_started = time.monotonic()
     orig_state = torch.load(a.original, map_location="cpu", weights_only=True)
-    teacher = common.build_model("cifar10"); teacher.load_state_dict(orig_state); teacher = teacher.to(dev).eval()
+    teacher = build_model(common, a.architecture)
+    teacher.load_state_dict(orig_state)
+    teacher = teacher.to(dev).eval()
     zf0, zv0 = logits_of(teacher, xf).double(), logits_of(teacher, sets["target"][0]).double()
     sf0, _ = scores(zf0, yf)
     sv0, _ = scores(zv0, sets["target"][1])
@@ -201,7 +213,9 @@ def main():
 
     logq = iproj(targets) if a.loss == "kl_iproj" else None
 
-    model = common.build_model("cifar10")
+    torch.cuda.synchronize()
+    target_s = time.monotonic() - target_started
+    model = build_model(common, a.architecture)
     model.load_state_dict(torch.load(a.init, map_location="cpu", weights_only=True) if a.init else orig_state)
     model = model.to(dev)
     common.set_determinism(a.seed)
@@ -228,19 +242,24 @@ def main():
 
     def record(epoch, train_s):
         nonlocal best
+        if a.training_only and epoch != a.epochs and epoch not in save_epochs:
+            return
         saved = swap_in_average()
-        d = dists(model, sets)
-        np.savez_compressed(a.out / f"epoch{epoch:03d}.npz", **d)
-        m = devgap.metrics(d)
-        row = dict(epoch=epoch, train_s=train_s, forget_passes=forget_samples / len(yf), **m)
-        if ref:
-            row.update({f"gap_{k}": v for k, v in devgap.gap(m, ref).items()})
-            # selection-only held-out: excludes the target fold used to build (current) targets
-            ms = devgap.metrics(d, held=("selection",))
-            row.update({f"sel_{k}": v for k, v in ms.items()})
-            row["sel_gap_avg"] = devgap.gap(ms, ref_sel)["avg"]
-        # Retrain-free proxy: forget should look like held-out under this model
-        row["self_gap"] = (abs(m["ua"] - (100 - m["ta"])) + abs(m["mia"] - m["held_nonmember_rate"])) / 2
+        row = dict(epoch=epoch, train_s=train_s, target_s=target_s,
+                   forget_passes=forget_samples / len(yf))
+        if not a.training_only:
+            d = dists(model, sets)
+            np.savez_compressed(a.out / f"epoch{epoch:03d}.npz", **d)
+            m = devgap.metrics(d)
+            row.update(m)
+            if ref:
+                row.update({f"gap_{k}": v for k, v in devgap.gap(m, ref).items()})
+                # This subset excludes the fold used to construct targets.
+                ms = devgap.metrics(d, held=("selection",))
+                row.update({f"sel_{k}": v for k, v in ms.items()})
+                row["sel_gap_avg"] = devgap.gap(ms, ref_sel)["avg"]
+            row["self_gap"] = (abs(m["ua"] - (100 - m["ta"]))
+                               + abs(m["mia"] - m["held_nonmember_rate"])) / 2
         hist.append(row)
         with (a.out / "history.jsonl").open("a") as f:
             f.write(json.dumps(row) + "\n")

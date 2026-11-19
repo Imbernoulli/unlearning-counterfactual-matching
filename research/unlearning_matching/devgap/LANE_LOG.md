@@ -1,13 +1,11 @@
 # Unlearning lane log (Claude, from 2026-11-06 21:10 PST)
 
-Continues codex sessions 01a1b3ac / 01a1b43d (ran out of quota 20:42).
-
 ## State inherited
 - Daytona box 34d0d83c was deleted 05:08Z after a verified 2.2 GB snapshot:
   `.local-saves/unlearning-project-20261106/optimization/daytona_recovery/final_snapshot.tgz`
   extracted to `/mnt/datablaze2/bohanlyu/unlearning-20261106/snapshot/out` (all confirmation
   checkpoints, Retrain/SalUn refs for seeds 42/43/44 and independent Originals 142..542).
-- Frozen codex method (joint-score energy, 23 ep): dev AvgGap on seed 42 = 1.69 vs SalUn 1.15
+- Frozen joint-score energy method (23 ep): dev AvgGap on seed 42 = 1.69 vs SalUn 1.15
   -> under-forgets (UA 3.7 / MIA 7.7 vs Retrain 5.0 / 12.0). Not evaluated on test.
 - SalUn-residual job crashed at launch (passed original.pt where a JSON manifest was expected).
 

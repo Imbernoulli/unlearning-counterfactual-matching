@@ -97,8 +97,8 @@ def splits(a, y):
     return {k: np.asarray(v, dtype=np.int64) for k, v in result.items()}
 
 
-def model_from(state=None, channels_last=False):
-    model = common.build_model("cifar10")
+def model_from(state=None, channels_last=False, *, model_factory=None):
+    model = common.build_model("cifar10") if model_factory is None else model_factory()
     if state is not None:
         model.load_state_dict(state, strict=True)
     model = model.cuda()
@@ -184,8 +184,8 @@ class WorkerRNG:
             return result
 
 
-def baseline(a, name, data, state):
-    model = model_from(state)
+def baseline(a, name, data, state, *, model_factory=None):
+    model = model_from(state, model_factory=model_factory)
     common.set_determinism(a.seed)
     scope = {}
     src = runpy.run_path(str(TASK / "edits" / f"{name}.edit.py"))["_CONTENT"]

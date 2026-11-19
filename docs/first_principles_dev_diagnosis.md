@@ -1,6 +1,6 @@
 # Why target matching under-forgot, and what fixes it (dev seed 42)
 
-Continues the codex study; its derivations (1-D OT and I-projection in
+Continues the initial study; its derivations (1-D OT and I-projection in
 [mathematical_connections.md](mathematical_connections.md), energy geometry,
 the susceptibility view in [physics_connections.md](physics_connections.md))
 and probes ([target_bias_probe.md](target_bias_probe.md),
@@ -24,7 +24,7 @@ unchanged benchmark evaluator. Seeds 42/142..542 share split 42's forget set.
 
 Replica check (seed 42): Original 0.00/100/94.77/0.07, Retrain 5.00/100/94.48/11.96,
 SalUn 2.24/99.62/93.89/11.09 (UA/RA/TA/MIA). Dev AvgGap: Original 4.30,
-SalUn 1.15 (its test AvgGap over seeds 42-44 was 0.97), frozen codex energy
+SalUn 1.15 (its test AvgGap over seeds 42-44 was 0.97), frozen joint-score energy
 method at its frozen epoch 23: 1.69.
 
 ## 1. Anatomy of the metric
@@ -42,7 +42,7 @@ So MIA-efficacy = P_F(confidence < c*), with c* set by the model's own
 retain/held-out separation; UA = P_F(argmax wrong). Both are **lower-tail mass**
 statistics of the forget confidence distribution. The extreme top
 (0.99-0.9999), where most mass and most KS discrepancy lie, does not enter.
-The codex probe found the KS-maximizing threshold at 0.996-0.999, so J rewarded
+The initial probe found the KS-maximizing threshold at 0.996-0.999, so J rewarded
 changes the benchmark cannot see and stopped training early (selected epochs
 1-3 in 50 of 58 trials). Retrain's defining property is visible directly:
 forget and held-out are exchangeable under it (11.96 vs 12.13; error 5.0 vs 5.5).
@@ -61,7 +61,7 @@ clip is load-bearing for MSE.
 distribution caps MIA at Original's held-out tail mass, 10.2%, below Retrain's
 12.0%. Retrain was trained on 10% fewer images: its held-out log-odds are
 0.4-0.9 lower in the 5-20% quantile band (slightly higher at the top, which the
-metric ignores). This is the counterfactual quantity the codex probe could not
+metric ignores). This is the counterfactual quantity the initial probe could not
 choose without a reference. A constant target shift is the crudest model of
 it; on dev, shift -1 / -1.5 lift MIA to 11-12 and dev AvgGap to 0.26 / 0.22
 (25 dense epochs, **over budget**; see section 4).

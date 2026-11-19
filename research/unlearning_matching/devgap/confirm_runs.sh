@@ -1,7 +1,7 @@
 #!/bin/bash
 # Confirmation: one frozen config, fixed epoch count, returned checkpoint = last.pt.
 #   s42      : the development split (reported separately, never pooled)
-#   s43,s44  : fresh deletion splits, canonical Original (codex references)
+#   s43,s44  : fresh deletion splits, canonical Original (paired references)
 #   s45..s49 : fresh deletion splits, canonical Original (references trained 2026-11-06 night)
 #   o142..o542: independent Originals, deletion split 42 (same forget set as dev; varies Original only)
 # usage: confirm_runs.sh TAG GPU_LIST PER_GPU [--] <frozen unlearn_dev.py args incl. --epochs>
